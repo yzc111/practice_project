@@ -1,0 +1,221 @@
+ book.py
+from sqlite3 import *
+from tkinter import *
+from tkinter.messagebox import *
+from traceback import *
+rt=Tk()
+rt.geometry('700x400+400+400')   #制作主界面大小
+rt.title('迷你图书管理')   #标题
+manfra = LabelFrame()
+manfra.pack()
+dbfile = 'BookInfo.dat'#数据库名称
+#浏览图书部分
+def dispbook():
+    global manfra
+    cn = connect(dbfile)
+    cur = cn.execute('select * from book')
+    book = cur.fetchall()
+    cn.close()
+    manfra.destroy()
+    #对图书进行讨论
+    if len(book)==0:
+        showwarning('图书管理','没有图书!')
+    else:                
+        manfra=LabelFrame(text='图书信息')
+        manfra.pack(anchor='center',pady=50,ipadx=5,ipady=5)#设置图书信息界面的大小
+        manfra.columnconfigure(1,minsize=80)
+        manfra.columnconfigure(2,minsize=100)   
+        manfra.columnconfigure(3,minsize=200)
+        Label(manfra,text='图书序号',
+            font=('微软雅黑',9,'normal'),bd=1,
+            relief=SOLID).grid(row=1,column=1,sticky=N+E+S+W)
+        Label(manfra,text='图书号',
+            font=('微软雅黑',9,'normal'),bd=1,
+            relief=SOLID).grid(row=1,column=2,sticky=N+E+S+W)
+        Label(manfra,text='图书名称',
+            font=('微软雅黑',9),bd=1,
+            relief=SOLID).grid(row=1,column=3,sticky=N+E+S+W)                
+        rn = 2                
+        for x in book:
+            cn = 1
+            Label(manfra,text=str(rn-1),
+                font=('微软雅黑',9,'bold'),bd=1,
+                relief=SOLID).grid(row=rn,column=cn,sticky=N+E+S+W)
+            for a in x:
+                cn+=1
+                Label(manfra,text=str(a),
+                    font=('微软雅黑',9),bd=1,
+                    relief=SOLID).grid(row=rn,column=cn,sticky=N+E+S+W)
+            rn+=1
+#编辑图书的界面部分
+def editbook():
+    global manfra
+    manfra.destroy()
+    manfra = LabelFrame(text='编辑图书')
+    manfra.pack(anchor='center',pady=50,ipadx=5,ipady=5)
+    tf = LabelFrame(manfra,text='查找图书')
+    tf.pack(anchor='center',pady=10,ipadx=5,ipady=5)            
+    Label(tf,text='输入图书号',anchor=E).grid(row=1,column=1)
+    cno = StringVar()            
+    txtcno = Entry(tf,textvariable=cno)
+    txtcno.grid(row=1,column=2)            
+    btok = Button(tf,text='查找')
+    btok.grid(row=1,column=3)
+    editframe = LabelFrame(manfra,text='编辑图书')
+    editframe.pack(anchor='center',pady=20,ipadx=5,ipady=5)
+    btdel = Button(editframe,text='删除图书',state=DISABLED)
+    btdel.pack(anchor=NW)
+    op = LabelFrame(editframe,text='修改图书')
+    op.pack(anchor='center',pady=10,ipadx=5,ipady=5)
+    Label(op,text='新图书号',anchor=E).grid(row=1,column=1)
+    newuserid = StringVar()            
+    newtxtuid = Entry(op,textvariable=newuserid)
+    newtxtuid.grid(row=1,column=2)
+    Label(op,text='新图书名',anchor=E).grid(row=2,column=1,sticky=E)
+    newpassword = StringVar()            
+    newtxtpwd = Entry(op,textvariable=newpassword)
+    newtxtpwd.grid(row=2,column=2)
+    bteditsave = Button(op,text=' 修改',state=DISABLED)
+    bteditsave.grid(row=1,column=3,rowspan=2,sticky=N+E+S+W)
+    def dofind():
+        cid = cno.get()  
+        if find(cid)==-1:
+            showinfo('图书管理','%s 没有记录！' % cid)
+        else:
+            btdel.config(state='normal')
+            bteditsave.config(state='normal')
+    def dodelete():
+        cid = cno.get()
+        if askokcancel('图书管理', "确认删除：%s？" % cid):
+            cn = connect(dbfile)
+            cn.execute('delete from book where cno=?',(cid,))
+            cn.commit()
+            cn.close()
+            showinfo('图书管理', "成功删除：%s" % cid)         
+    def saveedit():
+        cid = cno.get()
+        newname=newuserid.get()
+        if newname=='':
+            showerror('图书管理','新图书名错误：%s' % newname)
+            newtxtuid.focus_set()
+        else:                                                        
+            if find(newname)==1:
+                showerror('图书管理','图书  %s已经存在：' % newname)
+                newtxtuid.focus_set()
+            else:
+                cna=newpassword.get()
+                if cna=='':
+                    showerror('图书管理','图书号无效!')
+                    newtxtpwd.focus_set()                   
+                else:
+                    cn=connect(dbfile)               
+                    cn.execute('update book set cno=?,cname=?\
+                        where cno=?',(newname,cna,cid))
+                    cn.commit()
+                    cn.close()
+                    showinfo('图书管理','修改成功!')
+    btok.config(command = dofind)
+    btdel.config(command = dodelete)
+    bteditsave.config(command = saveedit)
+#添加图书界面部分
+def appebook():
+    global manfra            
+    manfra.destroy()
+    manfra = LabelFrame(text='添加图书')
+    manfra.pack(anchor=CENTER,pady=120,ipadx=5,ipady=5)
+    tf=Frame(manfra)
+    tf.pack()
+    Label(tf,text='图书号',anchor=E).grid(row=1,column=1)
+    cno = StringVar()            
+    txtcno = Entry(tf,textvariable=cno)
+    txtcno.grid(row=1,column=2)
+    Label(tf,text='图书名',anchor=E).grid(row=2,column=1,sticky=E)
+    cname = StringVar()            
+    txtcna = Entry(tf,textvariable=cname)
+    txtcna.grid(row=2,column=2)
+    tf2 = Frame(manfra)
+    tf2.pack()
+    btok = Button(tf2,text='添加')
+    btok.grid(row=1,column=1)
+    btclear = Button(tf2,text='清空')
+    btclear.grid(row=1,column=2)
+    def clearall():
+        cno.set('')
+        cname.set('')
+    def savenew():
+        cid = cno.get()
+        cna = cname.get()
+        if cid=='':
+            showerror('图书管理','图书名无效!')        
+        else:        
+            if find(cid)==1:
+                showerror('图书管理','图书名已经存在!')
+                txtcno.focus()
+            else:
+                if cna=='':
+                    showerror('图书管理','图书名输入无效！')
+                else:
+                    cn=connect(dbfile)
+                    cn.execute('insert into book values(?,?)',(cid,cna))
+                    cn.commit()
+                    cn.close() 
+                    showinfo('图书管理','已成功添加图书！')   
+    btclear.config(command = clearall)
+    btok.config(command = savenew)                       
+def find(namekey):
+    cn = connect(dbfile)
+    cur = cn.execute('select * from book where cno=?',(namekey,))
+    books = cur.fetchall()
+    if len(books)>0:
+        n=1
+    else:
+        n=-1
+    cn.close()
+    return n
+def resetdb():
+    global manfra
+    manfra.destroy()
+    if askokcancel('图书管理', '清除图书!\n是否继续？'):
+        cn = connect(dbfile)
+        cn.execute('drop table if exists book')
+        cn.execute('create table book(cno text primary key,cname text)')
+        cn.close()
+        showinfo('图书管理','初始图书记录成功！')
+def sysexit():
+    if askokcancel('图书管理', "确认退出?"):
+        rt.destroy()
+#关于帮助
+def dispinfo():
+    global manfra
+    manfra.destroy() 
+    manfra = LabelFrame(text='帮助',bd=1,relief=SUNKEN)
+    manfra.pack(expand=YES,fill=BOTH)
+    sc = Scrollbar(manfra)
+    sc.pack(side=RIGHT,fill=Y)
+    text1 = Text(manfra)
+    text1.pack(expand=YES,fill=BOTH)
+    text1.config(yscrollcommand=sc.set)
+    sc.config(command=text1.yview) 
+    log = open('Help.txt','r')
+    logtxt = log.read()
+    log.close()
+    text1.insert('2.0',logtxt)
+def dispabout():
+    showinfo('版权','图书管理 v2.0\n 谢谢使用该系统!\n2020年6月11日') 
+menubar = Menu(rt)
+rt.config(menu=menubar)
+file = Menu(menubar,tearoff=0)
+file.add_command(label='浏览图书',command=dispbook)
+file.add_separator()
+file.add_command(label='添加图书',command=appebook)
+file.add_command(label='编辑图书',command=editbook)
+file.add_command(label='清空图书',command=resetdb) 
+file.add_separator()
+file.add_command(label='退出',command=sysexit)
+menubar.add_cascade(label='图书',menu=file)
+help =Menu(menubar,tearoff=0)
+help.add_command(label='信息',command=dispinfo) 
+help.add_command(label='关于',command=dispabout)
+menubar.add_cascade(label='帮助',menu=help)
+
+rt.mainloop()

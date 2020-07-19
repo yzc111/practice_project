@@ -1,0 +1,290 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+a{
+	color: #000000;
+}
+img:hover{
+	transform: scale(1.02);
+}
+.register{
+	display: inline-block;
+	float: right;
+}
+.register a{
+	margin-left: 10px;
+	margin-right: 0;
+}
+/*中间图标和搜索框*/
+.logo {
+    margin: 40px auto;
+    width: 300px;
+}
+.logo h1{
+	margin-left: 16px;
+}
+.logo_logo {
+    position: absolute;
+    width: 284px;
+    height: 91px;
+    margin-top: -135px;
+}
+.logo_logo img:hover{
+	transform: scale(1);
+}
+.search input[type="text"]{
+	width: 258px;
+    height: 37px;
+    border: 3px solid rgba(182,29,29,1.0);
+    padding-left: 5px;
+    float: left;
+}
+.search>.btn{
+	font-size: 22px;
+	width: 40px;
+	height: 35px;
+	padding: 0;
+	box-sizing: content-box;
+	background-color: rgba(182,29,29,1.0);
+	color: white;
+	border-radius: inherit;
+	float: left;
+}
+.search_bottom{
+	font-size: 11px;
+}
+.search_bottom a:hover{
+	color: red;
+}
+.icon_logo{
+	position: relative;
+	float: right;
+	width: 200px;
+	height: 80px;
+}
+.icon_logo figure{
+	display: inline-block;
+	font-size: 12px;
+	color: #999999;
+	margin: 5px;
+	text-align: center;
+	float: right;
+}
+.icon_logo figure:first-child{
+	margin-right: 0;
+}
+.container {
+    min-width: 1170px;
+}
+#header {
+    background-color: rgba(123,123,123,0.4);
+    min-width: 1170px;
+}
+/*导航栏部分*/
+#nav_main {
+    border-bottom: 2px solid rgba(182,29,29,1.0);
+    margin-bottom: 15px;
+    min-width: 1170px;
+    background-color: #F8F8F8;
+}
+.hp_ul li {
+    display: inline-block;
+    width: 125px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.hp_ul .glyphicon{
+	top: 2px;
+}
+.hp_ul li a:hover{
+	color: rgba(182,29,29,1.0);
+}
+.hp_ul {
+    margin-bottom: 0px;
+}
+.hp_ul .active {
+    background-color: rgba(182,29,29,1.0);
+}
+.hp_ul .active a{
+	color: white;
+}
+.hp_ul .active a:hover{
+	color: white;
+}
+
+/*书籍分类*/
+.screen{
+	display: block;
+	clear: both;
+}
+.screen span{
+	float: left;
+	font-size: 15px;
+	border-right: 2px solid rgba(182,29,29,1.0);
+	margin-top: 14px;
+	padding-right: 7px;
+	border-radius: 2px;
+}
+.screen span:hover{
+	cursor: pointer;
+}
+.screen ul{
+	float: left;
+	margin-top: 10px;
+}
+.screen li{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 10px;
+	margin-left: 43px;
+	border-radius: 7px;
+}
+.screen li.active {
+    background-color: rgba(182,29,29,1);
+    color: white;
+}
+.screen li.active a{
+	color: white;
+}
+.screen li:hover{
+	cursor: pointer;
+}
+
+/******************************卖书部分****************************************/
+/*主体卖书部分*/
+#book_sell{
+	margin-top: 40px;
+}
+/*2.正式的销售*/
+.right_books{
+	width: 185px;
+	padding: 2px 2px 2px 1px;
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 49px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	border-bottom:2px solid #FFFFFF;
+}
+.book_lock{
+	width: 180px ;
+	height: 250px;
+	overflow: hidden;
+}
+.book_lock img {
+    width: 180px;
+    height: 250px;
+}
+.book_lock img:hover{
+	transform: scale(1.02);
+}
+.hidden_span{
+	display: none;
+	height: 30px;
+	position: absolute;
+	margin-top: -30px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.6);
+	line-height: 28px;
+	font-size: 17px;
+	color: white;
+	width: 182px;
+	margin-left: -1px;
+	/*兼容ie浏览器*/
+	*margin-left: -181px !important;
+	*margin-top: 223px !important;
+}
+.right_books a{
+	line-height: 1.42857143;
+	font-size: 12px;
+}
+.right_books a:hover{
+	text-decoration: none;
+}
+.right_books:nth-child(5n){
+	margin-right: 0;
+}
+.money{
+	color: red;
+	font-size: 18px;
+	margin-bottom: 0;
+}
+.info_book_right{
+	height: 32px;
+	width: 180px;
+	display: block;
+	font-size: 10px;
+	overflow: hidden;
+	text-indent: 14px;
+}
+#to_shopping .btn{
+    position: absolute;
+	margin-top: -24px;
+	color: white;
+	background-color: #20B6BB;
+	width: 74px;
+	height: 22px;
+	line-height: 5px;
+	margin-left: 106px;
+}
+#to_shopping .btn:hover{
+	box-shadow: 2px 2px 2px #333333;
+	cursor: pointer;
+	margin-top: -48px;
+	width: 65px;
+	margin-left: 111px;
+	height: 65px;
+	border-radius: 37px;
+	font-size: 24px;
+}
+/*3.分页查找*/
+.page_index li {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 40px;
+}
+#ul_icon {
+    display: inline-block;
+	margin-top: 35px;
+	margin-left: 376px;
+}
+#ul_icon .active {
+    background-color: rgba(182,29,29,1.0);
+    padding: 2px 10px;
+    border-radius: 9px;
+    line-height: 26px;
+    
+}
+#ul_icon .active a{
+	color: white;
+}
+#ul_icon .active a:hover{
+	color: white;
+}
+#stack_ul_btn {
+    border: none;
+    background-color: white;
+}
+#stack_ul_btn:hover{
+	color: red;
+}
+
+/*尾部声明*/
+.tail{
+	clear: both;
+	height: 140px;
+	margin-top: 100px;
+	background-color: #737373;
+	min-width: 1170px;
+}

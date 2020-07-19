@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二手书交易平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sell_book.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="./css/shop.css"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<!--网页最上面的横条-->
+  	<div id="header">
+  		<div class="container">
+  			<span>专业二手书商城</span>
+  			<div class="register">
+  				<a href="personal.html">个人中心</a>
+  				<a href="login.html">登录&nbsp;<span class="glyphicon glyphicon-user"></span></a>
+  				<a href="login.html">注销&nbsp;<sapn class="glyphicon glyphicon-off"></span></a>
+  			</div>
+  		</div>
+  	</div>
+  	<!--中间的logn 搜索框 以及图标位置 部分-->
+  	<div id="logn" class="container">
+  		<div class="logo">
+  			<h1>For-Knowledge</h1>
+  			<div class="input-group search">
+  				<input type="text" class="" placeholder="请输入搜索的内容"><button class="btn"><span class="glyphicon glyphicon-search"></span></button>
+  			</div>
+  			<div class="search_bottom">
+				<span>热搜：<a href="#" class="">高等数学</a>|<a href="#" class="">概率论与数理统计</a>|<a href="#" class="">计算机二级</a>|<a href="#" class="">初级会计</a></span>
+			</div>
+  		</div>
+  		<div class="logo_logo">
+  			<img src="img/logo.png" />
+  		</div>
+  	</div>
+  		<!--导航栏部分-->
+  	<nav id="nav_main" >
+  		<div class="container">
+	  		<ul class="hp_ul">
+	  			<li><a href="home_page.html"><!--<span class="glyphicon glyphicon-home"></span>&nbsp;-->首页</a></li><li >
+	  				<a href="stack.html"><!--<span class="glyphicon glyphicon-th-list"></span>&nbsp;-->书库</a></li><li >
+	  				<a href="wish_list.html"><!--<span class="glyphicon glyphicon-list-alt"></span>&nbsp;-->心愿单</a></li><li class="active">
+	  				<a href="sell_book.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;卖书</a></li><li >
+	  				<a href="bookcase.html"><!--<span class="glyphicon glyphicon-tasks"></span>&nbsp;-->书架</a></li><li >
+	  				<a href="client.html"><!--<span class="glyphicon glyphicon-phone"></span>&nbsp;-->订单详情</a></li><li >
+	  				<a href="order.html"><!--<span class="glyphicon glyphicon-phone"></span>&nbsp;-->我的订单</a></li><li >
+	  				<a href="community.html"><!--<span class="glyphicon glyphicon-comment"></span>&nbsp;-->社区</a></li>
+	  		</ul>
+  		</div>
+  	</nav>
+  	<div id="sk_body" class="container">
+  		<div id="sk_left">
+  			<div class="sk_book">
+  				<h3><span class="glyphicon glyphicon-book"></span>书籍信息</h3>
+  				<form action="input_file" enctype="multipart/form-data" name="input_file">
+  					<table>
+	  					<tr>
+	  						<td><label for="book_name">书籍名称</label></td>
+	  						<td><input type="text" id="book_name" class="required" placeholder="请输入书籍的全名"/></td>
+	  					</tr>
+	  					<tr>
+	  						<td class="sk_info">
+	  							<label for="info">书籍主旨</label>
+	  						</td>
+	  						<td>
+	  							<textarea id="info" name="info" class="required" placeholder="在20字以内作为书籍的主标题，把握重点，让书友有购买欲" rows="" cols=""></textarea>
+	  						</td>
+	  					</tr>
+	  					<tr>
+	  						<td class="sk_info">
+	  							<label for="info_2">书籍简介</label>
+	  						</td>
+	  						<td>
+	  							<textarea id="info_2" name="info" class="required" placeholder="可以适当增加一点你对这本书的理解，在50字以内" rows="" cols=""></textarea>
+	  						</td>
+	  					</tr>
+	  					<tr>
+	  						<td class="sk_info">
+	  							<label for="book_pho">书籍照片</label></td>
+	  						<td>
+	  							<div class="sk_book_img" id="book_pho"></div>
+		  							<form  action="input_file" enctype="multipart/form-data" name="input_file">
+		  								<input id="fileId1" type="file" accept="image/png,image/gif" name="fileId1" style="display: none;" onchange="document.input_file.fild_text.value=this.value"/>
+		  								<input type="button" name="fild_btn" id="fild_btn" value="选择图片" class="btn btn-default" onclick="document.input_file.fileId1.click()" />
+		  								<input type="text" name="fild_text" id="fild_text" />
+		  									<input type="submit" id="sk_sub" class="btn btn-default" value="上传"/>
+		  							
+	  						</td>
+	  					</tr>
+	  					<tr>
+	  						<td><label for="book_cash">报价</label></td>
+	  						<td><input type="text" id="book_cash" class="required" placeholder="合理报价"/></td>
+	  					</tr>
+	  					<tr>
+	  						<td><label>书籍语言</label></td>
+	  						<td>
+	  							<select>
+									  	<option value="type">中文</option>
+									  	<option value="type">英语</option>
+									  	<option value="type">日语</option>
+									  	<option value="type">韩语</option>
+									  	<option value="type">其他</option>
+										</select>
+	  						</td>
+	  					</tr>
+	  					<tr>
+	  						<td><label>书籍种类</label></td>
+	  						<td>
+	  							<select>
+									  	<option value="type">考研</option>
+									  	<option value="type">学习</option>
+									  	<option value="type">小说</option>
+									  	<option value="type">科普</option>
+									  	<option value="type">法律</option>
+									  	<option value="type">经济</option>
+									  	<option value="type">哲学</option>
+									  	<option value="type">历史</option>
+									  	<option value="type">休闲</option>
+									  	<option value="type">其他</option>
+										</select>
+	  						</td>
+	  					</tr>
+	  					<tr>
+	  						<td><label for="book_new">书籍新旧</label></td>
+	  						<td>
+	  							<select>
+	  									<option value="type">三成新</option>
+									  	<option value="type">五成新</option>
+									  	<option value="type">七成新</option>
+									  	<option value="type">九成新</option>
+										</select>
+	  						</td>
+	  					</tr>
+	  					<tr>
+	  						<td class="sk_info">
+	  							<label for="address">附加</label>
+	  						</td>
+	  						<td><textarea id="info_addr" class="required" name="info" placeholder="对于这次交易你的补充说明" rows="" cols=""></textarea></td>
+	  					</tr>
+  					</table>
+  				</form>
+  			</div>
+  			</div>
+  		
+  		<div id="sk_right">
+  			<div>
+  				<h3>卖家须知</h3>
+  				<div class="sk_right_content">
+  				<h4>售出提成: </h4>
+  				<p>单笔交易完成后，从卖方收入中提取0.5%-10%的交易额作为提成。对于卖家来说，在网站交易后的净利润明显比其他途径售出旧书所获得的可观，因此设定的0.5%-10%的提成比率对用户来说是在可接受范围之内的，对于我方来讲每笔订单的提成将是一笔很客观的收入。</p>
+					<h4>信用等级制度:</h4>
+					<p>卖家每次成功交易加信用积分,信用积分可以在本站用于  商品排名提前 降低提取交易额 </p>
+					<h4>商品优化: </h4>
+					<p>给予本网站的保证金我们优先显示您的商品在搜索结果中</p>
+					<h4>广告植入收入:  </h4>
+					<p>这部分是重要的收入来源，植入的广告主要分为三类：弹窗广告、点击广告、显示广告。</p>
+					<h4>大数据:</h4>
+					<p>收集消费者的数据和信息.</p>
+					<h4>支出费用:</h4>
+					<p>工资:校园代理，管理人员的报酬支出宣传支出;传单，海报等的支出，以及校园宣传活动的支出;管理费用，涵盖的是管理网站，建造网络注册，电子档案的费用;资料，材料等费用支出。</p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="container">
+  		<button type="submit" id="sk_btn" class="btn btn-default">提交</button>
+  	</div>
+  	
+  	<!--尾部声明-->
+  	<footer class="tail">
+		<div class="bottom">
+			<div class="ziQ">
+				<ul>
+					<li><a>关于我们</a></li>
+					<li><a>服务协议</a></li>
+					<li><a>隐私保护政策</a></li>
+					<li><a>使用指南</a></li>
+					<li><a>联系我们</a></li>
+					<li><a>加入我们</a></li>
+					<li><a>友情链接</a></li>
+					<li><a>私信书海拾贝</a></li>
+				</ul>
+				<p>公司名称：书海拾贝有限责任公司</p>
+				<p> 公司地址：山西财经大学</p>
+				<p> 联系电话：110 </p>
+			</div>
+		</div>
+  	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sell_book.js"></script>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+a{
+	color: #000000;
+}
+img:hover{
+	transform: scale(1.02);
+}
+.register{
+	display: inline-block;
+	float: right;
+}
+.register a{
+	margin-left: 10px;
+	margin-right: 0;
+}
+/*中间图标和搜索框*/
+.logo {
+    margin: 40px auto;
+    width: 300px;
+}
+.logo_logo {
+    position: absolute;
+    width: 284px;
+    height: 91px;
+    margin-top: -135px;
+}
+.logo_logo img:hover{
+	transform: scale(1);
+}
+.logo h1{
+	margin-left: 16px;
+}
+.search input[type="text"]{
+	width: 258px;
+    height: 37px;
+    border: 3px solid rgba(182,29,29,1.0);
+    padding-left: 5px;
+    float: left;
+}
+.search>.btn{
+	font-size: 22px;
+	width: 40px;
+	height: 35px;
+	padding: 0;
+	box-sizing: content-box;
+	background-color: rgba(182,29,29,1.0);
+	color: white;
+	border-radius: inherit;
+	float: left;
+}
+.search_bottom{
+	font-size: 11px;
+}
+.search_bottom a:hover{
+	color: red;
+}
+.icon_logo{
+	position: relative;
+	float: right;
+	width: 200px;
+	height: 80px;
+}
+.icon_logo figure{
+	display: inline-block;
+	font-size: 12px;
+	color: #999999;
+	margin: 5px;
+	text-align: center;
+	float: right;
+}
+.icon_logo figure:first-child{
+	margin-right: 0;
+}
+.container {
+    min-width: 1170px;
+}
+#header {
+    background-color: rgba(123,123,123,0.4);
+    min-width: 1170px;
+}
+/*导航栏部分*/
+#nav_main {
+    border-bottom: 2px solid rgba(182,29,29,1.0);
+    margin-bottom: 15px;
+    min-width: 1170px;
+    background-color: #F8F8F8;
+}
+.hp_ul li {
+    display: inline-block;
+    width: 125px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.hp_ul .glyphicon{
+	top: 2px;
+}
+.hp_ul li a:hover{
+	color: rgba(182,29,29,1.0);
+}
+.hp_ul {
+    margin-bottom: 0px;
+}
+.hp_ul .active {
+    background-color: rgba(182,29,29,1.0);
+}
+.hp_ul .active a{
+	color: white;
+}
+.hp_ul .active a:hover{
+	color: white;
+}
+
+/*心愿单的头部申明*/
+.list_header {
+    height: 170px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+    background: url(../img/list_1.jpg);
+}
+.list_group {
+    position: relative;
+}
+.list_btns {
+    position: absolute;
+    top: 0;
+}
+.list_btns {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    font-size: 17px;
+    margin-left: -35px;
+    border-bottom: 1px solid #aaa;
+    padding-left: 13px;
+}
+.list_btns a {
+    color: #666;
+    margin-right: 10px;
+}
+.list_btns a:hover{
+	color: red;
+}
+.list_btns abbr {
+    border: none;
+    cursor: pointer;
+}
+.header_left{
+	float: left;
+	width: 50%;
+	height: 45px;
+	border-right: 2px solid #ccc;
+}
+.header_right{
+	float: left;
+	width: 50%;
+	height: 170px;
+}
+.list_header pre {
+    display: inline-block;
+    margin-top: 41px;
+    position: absolute;
+    margin-left: 160px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: white;
+}
+.list_header pre:hover{
+	cursor: default;
+}
+.list_header .btn.btn-default {
+    float: right;
+    margin-top: 111px;
+    margin-right: 36px;
+    border: 2px solid rgba(182,29,29,1.0);
+    width: 80px;
+    background-color: white;
+    color: red;
+}
+.list_a {
+    position: relative;
+    float: right;
+    margin-top: 113px;
+    margin-right: 63px;
+    border: 2px solid red;
+    padding: 5px 17px;
+    background-color: white;
+    border-radius: 6px;
+}
+#list_left_btn {
+    width: 80px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgba(182,29,29,1.0);
+    color: white;
+}
+#list_right_btn {
+	float: right;
+    width: 80px;
+    border-radius:20px 0px 0px 20px;
+    background-color: rgba(182,29,29,1.0);
+    color: white;
+}
+
+
+/*心愿单的详情列表*/
+.list_lists {
+    width: 360px;
+	height: 224px;
+	margin-right: 30px;
+	margin-top: 30px;
+	box-sizing: border-box;
+	float: left;
+	border-radius: 10px;
+}
+.list_lists:nth-child(2n-1){
+	border: 2px solid #67B168;
+}
+.list_lists:nth-child(2n){
+	border: 2px solid #20B6BB;
+}
+.list_lists:nth-child(3n){
+	margin-right:0 ;
+	
+}
+.person_info {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid;
+}
+.person_photo {
+	float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.person_photo img {
+    width: 50px;
+    height: 50px;
+}
+.person_name {
+    width: 100px;
+    height: 24px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.person_time {
+    width: 101px;
+    height: 25px;
+    margin-top: 27px;
+    margin-left: 64px;
+    font-size: 12px;
+    line-height: 25px;
+    overflow: hidden;
+    position: absolute;
+}
+.person_look {
+    border: 2px solid #920;
+    width: 85px;
+    height: 35px;
+    position: relative;
+    float: right;
+    margin-top: 13px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+.person_look a{
+	font-size: 19px;
+	margin-left: 20px;
+}
+.person_condition {
+    float: left;
+	width: 241px;
+	height: 160px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+}
+.person_condition li {
+    display: block;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+.person_explain {
+    width: 115px;
+	height: 160px;
+	float: left;
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+.person_request {
+    margin-left: 39px;
+    margin-top: -19px;
+    width: 190px;
+}
+#person_book span {
+    font-size: 13px;
+    color: #444;
+}
+.person_index {
+    width: 110px;
+    height: 152px;
+    overflow: hidden;
+    margin-left: 1px;
+    margin-top: 4px;
+}
+.person_index img {
+    width: 110px;
+    height: 152px;
+}
+.list_last {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 87px;
+}
+.person_index img:hover{
+	cursor: pointer;
+}
+
+/*尾部声明*/
+.tail{
+	clear: both;
+	height: 140px;
+	margin-top: 100px;
+	background-color: #737373;
+	min-width: 1170px;
+}

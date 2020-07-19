@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>商品列表页面</title>
+        <!--商品列表样式表-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bookcase.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/shop.css"/>
+   </head>
+    <body>
+    <!--网页最上面的横条-->
+  	<div id="header">
+  		<div class="container">
+  			<span>专业二手书商城</span>
+  			<div class="register">
+  				<a href="personal.html">个人中心</a>
+  				<a href="login.html">登录&nbsp;<span class="glyphicon glyphicon-user"></span></a>
+  				<a href="login.html">注销&nbsp;<span class="glyphicon glyphicon-off"></span></a>
+  			</div>
+  		</div>
+  	</div>
+  	<!--中间的logn 搜索框 以及图标位置 部分-->
+  	<div id="logn" class="container">
+  		<div class="logo">
+  			<h1>For-Knowledge</h1>
+  			<div class="input-group search">
+  				<input type="text" class="" placeholder="请输入搜索的内容"><button class="btn"><span class="glyphicon glyphicon-search"></span></button>
+  			</div>
+  			<div class="search_bottom">
+                <span>热搜：<a href="#" class="">高等数学</a>|<a href="#" class="">概率论与数理统计</a>|<a href="#" class="">计算机二级</a>|<a href="#" class="">初级会计</a></span>
+  			</div>
+  		</div>
+  		<div class="logo_logo">
+  			<img src="img/logo.png" />
+  		</div>
+  	</div>
+	
+  		<!--导航栏部分-->
+  	<nav id="nav_main" >
+  		<div class="container">
+	  		<ul class="hp_ul">
+	  			<li ><a href="home_page.html"><!--<span class="glyphicon glyphicon-home"></span>&nbsp;-->首页</a></li><li >
+	  				<a href="stack.html"><!--<span class="glyphicon glyphicon-th-list"></span>&nbsp;-->书库</a></li><li >
+	  				<a href="wish_list.html"><!--<span class="glyphicon glyphicon-list-alt"></span>&nbsp;-->心愿单</a></li><li >
+	  				<a href="sell_book.html"><!--<span class="glyphicon glyphicon-log-in"></span>&nbsp;-->卖书</a></li><li class="active">
+	  				<a href="bookcase.html"><span class="glyphicon glyphicon-tasks"></span>&nbsp;书架</a></li><li >
+	  				<a href="client.html"><!--<span class="glyphicon glyphicon-phone"></span>&nbsp;-->订单详情</a></li><li >
+	  				<a href="order.html"><!--<span class="glyphicon glyphicon-phone"></span>&nbsp;-->我的订单</a></li><li >
+	  				<a href="community.html"><!--<span class="glyphicon glyphicon-comment"></span>&nbsp;-->社区</a></li>
+	  		</ul>
+  		</div>
+  	</nav>
+
+    <div class="container">
+    	<div class="bc_book">
+    		<h3>书籍区<button id="bc_book_btn" class="btn btn-default">( 编辑  )</button></h3>
+    		<span id="bc_icon_1" class="glyphicon glyphicon-triangle-left"></span>
+    		<span id="bc_icon_2" class="glyphicon glyphicon-triangle-right"></span>
+    		
+    		<!--书籍区-->
+    		<div class="book_list" id="bc_info">
+    			
+    			<!--书籍基数开始-->
+    			<!--<div class="bc_bk">-->
+    				<!--删除按钮-->
+    				<!--<a href=""><span class="bc_icon glyphicon glyphicon-trash"></span></a>-->
+	    			<!--<div class="bc_img">-->
+	    				<!--<a href="details_buy.html">-->
+	    					<!--<img src="img/book_05.jpg" />-->
+	    				<!--</a>-->
+	    			<!--</div>-->
+	    			<!--<div class="bc_info">-->
+	    				<!--<ul>-->
+	  						<!--<li>名称：<span>情书</span></li>-->
+	  						<!--<li>价格：<span>26.5 元</span></li>-->
+	  						<!--<li>时间：<span>2019.12.22</span></li>-->
+	  						<!--<li>成色：<span>七成新</span></li>-->
+	  						<!--<li>库存：<span>目前还有八本</span></li>-->
+	  						<!--<li>卖家：<span>山西财经大学信息学院学生</span></li>-->
+	  					<!--</ul>-->
+<!--	  					<button id="bc_btn" class="btn btn-default" onclick="window.open('details_buy.html')">再去看看</button>-->
+	  					<!--<button id="bc_btn" class="btn btn-default" onclick="window.open('client.html')">购买</button>-->
+	    			<!--</div>-->
+	    		<!--</div>-->
+    			<!--基数结束-->
+    			
+    			<!--基数结束<div class="bc_bk">-->
+    				<!--&lt;!&ndash;删除按钮&ndash;&gt;-->
+    				<!--<a href=""><span class="bc_icon glyphicon glyphicon-trash"></span></a>-->
+	    			<!--<div class="bc_img">-->
+	    				<!--<a href="details_buy.html">-->
+	    					<!--<img src="img/book_05.jpg" />-->
+	    				<!--</a>-->
+	    			<!--</div>-->
+	    			<!--<div class="bc_info">-->
+                        <!--<ul>-->
+                            <!--<li>名称：<span>情书</span></li>-->
+                            <!--<li>价格：<span>26.5 元</span></li>-->
+                            <!--<li>时间：<span>2019.12.22</span></li>-->
+                            <!--<li>成色：<span>七成新</span></li>-->
+                            <!--<li>库存：<span>目前还有八本</span></li>-->
+                            <!--<li>卖家：<span>山西财经大学信息学院学生</span></li>-->
+                        <!--</ul>-->
+						<!--<button id="bc_btn" class="btn btn-default" onclick="window.open('client.html')">购买</button>-->
+	    			<!--</div>-->
+	    		<!--</div>-->
+
+	    		<!--<div class="bc_bk">-->
+    				<!--&lt;!&ndash;删除按钮&ndash;&gt;-->
+    				<!--<a href=""><span class="bc_icon glyphicon glyphicon-trash"></span></a>-->
+	    			<!--<div class="bc_img">-->
+	    				<!--<a href="details_buy.html">-->
+	    					<!--<img src="img/book_05.jpg" />-->
+	    				<!--</a>-->
+	    			<!--</div>-->
+	    			<!--<div class="bc_info">-->
+                        <!--<ul>-->
+                            <!--<li>名称：<span>情书</span></li>-->
+                            <!--<li>价格：<span>26.5 元</span></li>-->
+                            <!--<li>时间：<span>2019.12.22</span></li>-->
+                            <!--<li>成色：<span>七成新</span></li>-->
+                            <!--<li>库存：<span>目前还有八本</span></li>-->
+                            <!--<li>卖家：<span>山西财经大学信息学院学生</span></li>-->
+                        <!--</ul>-->
+						<!--<button id="bc_btn" class="btn btn-default" onclick="window.open('client.html')">购买</button>-->
+	    			<!--</div>-->
+	    		<!--</div>-->
+
+	    		<!--<div class="bc_bk">-->
+    				<!--&lt;!&ndash;删除按钮&ndash;&gt;-->
+    				<!--<a href=""><span class="bc_icon glyphicon glyphicon-trash"></span></a>-->
+	    			<!--<div class="bc_img">-->
+	    				<!--<a href="details_buy.html">-->
+	    					<!--<img src="img/book_05.jpg" />-->
+	    				<!--</a>-->
+	    			<!--</div>-->
+	    			<!--<div class="bc_info">-->
+	    				<!--<ul>-->
+                            <!--<li>名称：<span>情书</span></li>-->
+                            <!--<li>价格：<span>26.5 元</span></li>-->
+                            <!--<li>时间：<span>2019.12.22</span></li>-->
+                            <!--<li>成色：<span>七成新</span></li>-->
+                            <!--<li>库存：<span>目前还有八本</span></li>-->
+                            <!--<li>卖家：<span>山西财经大学信息学院学生</span></li>-->
+	  					<!--</ul>-->
+						<!--<button id="bc_btn" class="btn btn-default" onclick="window.open('client.html')">购买</button>-->
+	    			<!--</div>-->
+	    		<!--</div>-->
+
+	    		<!--<div class="bc_bk">-->
+    				<!--&lt;!&ndash;删除按钮&ndash;&gt;-->
+    				<!--<a href=""><span class="bc_icon glyphicon glyphicon-trash"></span></a>-->
+	    			<!--<div class="bc_img">-->
+	    				<!--<a href="details_buy.html">-->
+	    					<!--<img src="img/book_05.jpg" />-->
+	    				<!--</a>-->
+	    			<!--</div>-->
+	    			<!--<div class="bc_info">-->
+	    				<!--<ul>-->
+                            <!--<li>名称：<span>情书</span></li>-->
+                            <!--<li>价格：<span>26.5 元</span></li>-->
+                            <!--<li>时间：<span>2019.12.22</span></li>-->
+                            <!--<li>成色：<span>七成新</span></li>-->
+                            <!--<li>库存：<span>目前还有八本</span></li>-->
+                            <!--<li>卖家：<span>山西财经大学信息学院学生</span></li>-->
+	  					<!--</ul>-->
+						<!--<button id="bc_btn" class="btn btn-default" onclick="window.open('client.html')">购买</button>-->
+	    			<!--</div>-->
+	    		<!--</div>-->
+	    		<!---->
+	    		<!--<div class="bc_bk">-->
+    				<!--&lt;!&ndash;删除按钮&ndash;&gt;-->
+    				<!--<a href=""><span class="bc_icon glyphicon glyphicon-trash"></span></a>-->
+	    			<!--<div class="bc_img">-->
+	    				<!--<a href="details_buy.html">-->
+	    					<!--<img src="img/book_05.jpg" />-->
+	    				<!--</a>-->
+	    			<!--</div>-->
+	    			<!--<div class="bc_info">-->
+	    				<!--<ul>-->
+                            <!--<li>名称：<span>情书</span></li>-->
+                            <!--<li>价格：<span>26.5 元</span></li>-->
+                            <!--<li>时间：<span>2019.12.22</span></li>-->
+                            <!--<li>成色：<span>七成新</span></li>-->
+                            <!--<li>库存：<span>目前还有八本</span></li>-->
+                            <!--<li>卖家：<span>山西财经大学信息学院学生</span></li>-->
+	  					<!--</ul>-->
+						<!--<button id="bc_btn" class="btn btn-default" onclick="window.open('client.html')">购买</button>-->
+	    			<!--</div>-->
+	    		<!--</div>-->
+    			
+    		</div>
+    	</div>
+    	
+    	<div class="bc_lists">
+    		<h3 class="bc_h3">心愿单区<button id="bc_wish_btn" class="btn btn-default">( 编辑  )</button></h3>
+    		<span id="bc_icon_3" class="glyphicon glyphicon-triangle-left"></span>
+    		<span id="bc_icon_4" class="glyphicon glyphicon-triangle-right"></span>
+    		<div>
+    			
+    			<!--心愿单基数开始-->
+	  			<div class="list_lists">
+	  				<!--删除按钮-->
+	  				<a href=""><span  class="bc_list_icon glyphicon glyphicon-trash"></span></a>
+		  			<div class="person_info">
+			  			<div class="person_photo">
+			  					<img src="img/list_2.jpg" />
+			  			</div>
+			  			<div class="person_name">
+			  				<span>友人书</span>
+			  			</div>
+			  			<div class="person_time">
+			  				<time>2019.12.22 16:53</time>
+			  			</div>
+			  			<div class="person_look">
+			  				<a href="list_details.html">详情</a>
+			  			</div>
+			  		</div>
+		  			<div id="person_book">
+		  				<div class="person_condition">
+		  					<ul>
+		  						<li>书名：<span>高数书</span></li>
+		  						<li>要求：<span>七成新</span></li>
+		  						<li>报酬：<span>一顿饭、一本奶茶</span></li>
+		  						<li>请求：
+		  							<div class="person_request">
+		  								<span>准备打算考研，发现高数书不见了，又不想买新的，如果有多余的书，希望能给我看看</span>
+		  							</div>
+		  						</li>
+		  					</ul>
+		  				</div>
+		  				<div class="person_"></div>
+		  			</div>
+		  			<div class="person_explain">
+		  				<div class="person_index">
+		  					<a href="list_details.html">
+		  						<img src="img/list_3.jpg" />
+		  					</a>
+		  				</div>
+		  			</div>
+	  			</div>
+  				<!--基数结束-->
+  				
+  				<div class="list_lists">
+	  				<!--删除按钮-->
+	  				<a href=""><span  class="bc_list_icon glyphicon glyphicon-trash"></span></a>
+		  			<div class="person_info">
+			  			<div class="person_photo">
+			  					<img src="img/list_2.jpg" />
+			  			</div>
+			  			<div class="person_name">
+			  				<span>友人书</span>
+			  			</div>
+			  			<div class="person_time">
+                            <time>2019.12.22 16:53</time>
+			  			</div>
+			  			<div class="person_look">
+			  				<a href="list_details.html">详情</a>
+			  			</div>
+			  		</div>
+		  			<div id="person_book">
+		  				<div class="person_condition">
+		  					<ul>
+		  						<li>书名：<span>高数书</span></li>
+		  						<li>要求：<span>七成新</span></li>
+		  						<li>报酬：<span>一顿饭、一本奶茶</span></li>
+		  						<li>请求：
+		  							<div class="person_request">
+		  								<span>准备打算考研，发现高数书不见了，又不想买新的，如果有多余的书，希望能给我看看</span>
+		  							</div>
+		  						</li>
+		  					</ul>
+		  				</div>
+		  				<div class="person_"></div>
+		  			</div>
+		  			<div class="person_explain">
+		  				<div class="person_index">
+		  					<a href="list_details.html">
+		  						<img src="img/list_3.jpg" />
+		  					</a>
+		  				</div>
+		  			</div>
+	  			</div>
+	  			
+	  			<div class="list_lists">
+	  				<!--删除按钮-->
+	  				<a href=""><span  class="bc_list_icon glyphicon glyphicon-trash"></span></a>
+		  			<div class="person_info">
+			  			<div class="person_photo">
+			  					<img src="img/list_2.jpg" />
+			  			</div>
+			  			<div class="person_name">
+			  				<span>友人书</span>
+			  			</div>
+			  			<div class="person_time">
+			  				<time>2019.12.22 16:53</time>
+			  			</div>
+			  			<div class="person_look">
+			  				<a href="list_details.html">详情</a>
+			  			</div>
+			  		</div>
+		  			<div id="person_book">
+		  				<div class="person_condition">
+		  					<ul>
+		  						<li>书名：<span>高数书</span></li>
+		  						<li>要求：<span>七成新</span></li>
+		  						<li>报酬：<span>一顿饭、一本奶茶</span></li>
+		  						<li>请求：
+		  							<div class="person_request">
+		  								<span>准备打算考研，发现高数书不见了，又不想买新的，如果有多余的书，希望能给我看看</span>
+		  							</div>
+		  						</li>
+		  					</ul>
+		  				</div>
+		  				<div class="person_"></div>
+		  			</div>
+		  			<div class="person_explain">
+		  				<div class="person_index">
+		  					<a href="list_details.html">
+		  						<img src="img/list_3.jpg" />
+		  					</a>
+		  				</div>
+		  			</div>
+	  			</div>
+	  			
+	  			<div class="list_lists">
+	  				<!--删除按钮-->
+	  				<a href=""><span  class="bc_list_icon glyphicon glyphicon-trash"></span></a>
+		  			<div class="person_info">
+			  			<div class="person_photo">
+			  					<img src="img/list_2.jpg" />
+			  			</div>
+			  			<div class="person_name">
+			  				<span>友人书</span>
+			  			</div>
+			  			<div class="person_time">
+			  				<time>2019.12.22 16:53</time>
+			  			</div>
+			  			<div class="person_look">
+			  				<a href="list_details.html">详情</a>
+			  			</div>
+			  		</div>
+		  			<div id="person_book">
+		  				<div class="person_condition">
+		  					<ul>
+		  						<li>书名：<span>高数书</span></li>
+		  						<li>要求：<span>七成新</span></li>
+		  						<li>报酬：<span>一顿饭、一本奶茶</span></li>
+		  						<li>请求：
+		  							<div class="person_request">
+		  								<span>准备打算考研，发现高数书不见了，又不想买新的，如果有多余的书，希望能给我看看</span>
+		  							</div>
+		  						</li>
+		  					</ul>
+		  				</div>
+		  				<div class="person_"></div>
+		  			</div>
+		  			<div class="person_explain">
+		  				<div class="person_index">
+		  					<a href="list_details.html">
+		  						<img src="img/list_3.jpg" />
+		  					</a>
+		  				</div>
+		  			</div>
+	  			</div>
+	  			
+	  			<div class="list_lists">
+	  				<!--删除按钮-->
+	  				<a href=""><span  class="bc_list_icon glyphicon glyphicon-trash"></span></a>
+		  			<div class="person_info">
+			  			<div class="person_photo">
+			  					<img src="img/list_2.jpg" />
+			  			</div>
+			  			<div class="person_name">
+			  				<span>友人书</span>
+			  			</div>
+			  			<div class="person_time">
+			  				<time>2019.12.22 16:53</time>
+			  			</div>
+			  			<div class="person_look">
+			  				<a href="list_details.html">详情</a>
+			  			</div>
+			  		</div>
+		  			<div id="person_book">
+		  				<div class="person_condition">
+		  					<ul>
+		  						<li>书名：<span>高数书</span></li>
+		  						<li>要求：<span>七成新</span></li>
+		  						<li>报酬：<span>一顿饭、一本奶茶</span></li>
+		  						<li>请求：
+		  							<div class="person_request">
+		  								<span>准备打算考研，发现高数书不见了，又不想买新的，如果有多余的书，希望能给我看看</sapn>
+		  							</div>
+		  						</li>
+		  					</ul>
+		  				</div>
+		  				<div class="person_"></div>
+		  			</div>
+		  			<div class="person_explain">
+		  				<div class="person_index">
+		  					<a href="list_details.html">
+		  						<img src="img/list_3.jpg" />
+		  					</a>
+		  				</div>
+		  			</div>
+	  			</div>
+	  			
+    		</div>
+    	</div>
+    </div>
+     
+     
+     
+     <!--尾部声明-->
+    <footer class="tail">
+		<div class="bottom">
+			<div class="ziQ">
+				<ul>
+					<li><a>关于我们</a></li>
+					<li><a>服务协议</a></li>
+					<li><a>隐私保护政策</a></li>
+					<li><a>使用指南</a></li>
+					<li><a>联系我们</a></li>
+					<li><a>加入我们</a></li>
+					<li><a>友情链接</a></li>
+					<li><a>私信书海拾贝</a></li>
+				</ul>
+				<p>公司名称：书海拾贝有限责任公司</p>
+				<p> 公司地址：山西财经大学</p>
+				<p> 联系电话：110 </p>
+			</div>
+		</div>
+  	</footer>
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bookcase.js"></script>
+   </body>
+</html>   

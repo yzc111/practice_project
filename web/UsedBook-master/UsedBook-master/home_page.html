@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二手书交易平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home_page.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="./css/shop.css"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<!--网页最上面的横条-->
+  	<div id="header">
+  		<div class="container">
+  			<span>专业二手书商城</span>
+  			<div class="register">
+  				<a href="personal.html">个人中心</a>
+  				<a href="login.html">登录&nbsp;<span class="glyphicon glyphicon-user"></span></a>
+  				<a href="login.html">注销&nbsp;<span class="glyphicon glyphicon-off"></span></a>
+  			</div>
+  		</div>
+  	</div>
+  	<!--中间的logn 搜索框 以及图标位置 部分-->
+  	<div id="logn" class="container">
+  		<div class="logo">
+  			<h1>For-Knowledge</h1>
+  			<div class="input-group search">
+  				<input type="text" class="" placeholder="请输入搜索的内容"><button class="btn"><span class="glyphicon glyphicon-search"></span></button>
+  			</div>
+  			<div class="search_bottom">
+  				<span>热搜：<a href="#" class="">高等数学</a>|<a href="#" class="">概率论与数理统计</a>|<a href="#" class="">计算机二级</a>|<a href="#" class="">初级会计</a></span>
+  			</div>
+  		</div>
+  		<div class="logo_logo">
+  			<img src="img/logo.png" />
+  		</div>
+  	</div>
+  	
+  		<!--导航栏部分-->
+  	<nav id="nav_main" >
+  		<div class="container">
+	  		<ul class="hp_ul">
+	  			<li class="active"><a href="home_page.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a></li><li >
+	  				<a href="stack.html">书库</a></li><li >
+	  				<a href="wish_list.html">心愿单</a></li><li >
+	  				<a href="sell_book.html">卖书</a></li><li >
+	  				<a href="bookcase.html">书架</a></li><li >
+	  				<a href="client.html">订单详情</a></li><li >
+				<a href="order.html">我的订单</a></li><li >
+	  				<a href="community.html">社区</a></li>
+
+	  		</ul>
+  		</div>
+  	</nav>
+  	
+  	<!--主体轮播图一行栏-->
+  	<div id="img_play" class="container">
+  		<div class="row">
+  			<div class="col-xs-3">
+  				<div id="index_book">
+  					<h3>书籍分类</h3>
+  					<ul>
+  						<li>
+  							<div class="book_search">
+  								<span>教材</span>
+  								<ul>
+  									<li><a href="stack.html">英语</a></li>
+  									<li><a href="stack.html">工学</a></li>
+  									<li><a href="stack.html">数学</a></li>
+  									<li><a href="stack.html">金融</a></li>
+  									<li><a href="stack.html">经济</a></li>
+  								</ul>
+  							</div>
+  						</li>
+  						<li>
+  							<div class="book_search">
+  								<span>小说</span>
+  								<ul>
+  									<li><a href="stack.html">推理</a></li>
+  									<li><a href="stack.html">言情</a></li>
+  									<li><a href="stack.html">武侠</a></li>
+  									<li><a href="stack.html">玄幻</a></li>
+  									<li><a href="stack.html">恐怖</a></li>
+  								</ul>
+  							</div>
+  						</li>
+  						<li>
+  							<div class="book_search">
+  								<span>考试</span>
+  								<ul>
+  									<li><a href="stack.html">期货</a></li>
+  									<li><a href="stack.html">初会</a></li>
+  									<li><a href="stack.html">教资</a></li>
+  									<li><a href="stack.html">证券</a></li>
+  									<li><a href="stack.html">国考</a></li>
+  								</ul>
+  							</div>
+  						</li>
+  						<li>
+  							<div class="book_search">
+  								<span>期刊</span>
+  								<ul>
+  									<li><a href="stack.html">外文</a></li>
+  									<li><a href="stack.html">杂志</a></li>
+  									<li><a href="stack.html">时尚</a></li>
+  									<li><a href="stack.html">学报</a></li>
+  									<li><a href="stack.html">经济</a></li>
+  								</ul>
+  							</div>
+  						</li>
+  						<li>
+  							<div class="book_search">
+  								<span>经济</span>
+  								<ul>
+  									<li><a href="stack.html">会计</a></li>
+  									<li><a href="stack.html">审计</a></li>
+  									<li><a href="stack.html">金融</a></li>
+  									<li><a href="stack.html">保险</a></li>
+  									<li><a href="stack.html">投资</a></li>
+  								</ul>
+  							</div>
+  						</li>
+  						<li>
+  							<div class="book_search">
+  								<span>语言</span>
+  								<ul>
+  									<li><a href="stack.html">雅思</a></li>
+  									<li><a href="stack.html">托福</a></li>
+  									<li><a href="stack.html">法语</a></li>
+  									<li><a href="stack.html">日语</a></li>
+  									<li><a href="stack.html">德语</a></li>
+  								</ul>
+  							</div>
+  						</li>
+  						<li>
+  							<div class="book_search">
+  								<span>法律</span>
+  								<ul>
+  									<li><a href="stack.html">民法</a></li>
+  									<li><a href="stack.html">刑法</a></li>
+  									<li><a href="stack.html">司法</a></li>
+  									<li><a href="stack.html">商法</a></li>
+  									<li><a href="stack.html">宪法</a></li>
+  								</ul>
+  							</div>
+  						</li>
+  						<li>
+  							<div class="book_search">
+  								<span>更多</span>
+  								<ul>
+  									<li><a href="stack.html">体育</a></li>
+  									<li><a href="stack.html">军事</a></li>
+  									<li><a href="stack.html">摄影</a></li>
+  									<li><a href="stack.html">旅游</a></li>
+  									<li><a href="stack.html">政治</a></li>
+  								</ul>
+  							</div>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="col-xs-6">
+  				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					  </ol>
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img src="img/book_1.jpg" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="img/book_2.jpg" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="img/book_3.jpg" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="img/book_4.jpg" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="img/book_5.jpg" alt="...">
+					    </div>
+					  </div>
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+				</div>
+  			</div>
+  			<div class="index_img col-xs-3">
+  				<div class="img_lock">
+  					<img src="img/book_6.jpg" />
+  				</div>
+  				<div class="index_img_bottom">
+  					<ul>
+  						<li class="index_li_1">
+  							<a href="#">活动&nbsp;<span class="glyphicon glyphicon-flag"></span></a>
+  							<ul class="sec_ul_1">
+  								<li><span>[特价]</span><a href="#">计算机二级书籍限时8折</a></li>
+									<li><span>[活动]</span><a href="#">毕业季高价回收</a></li>
+									<li><span>[活动]</span><a href="#">知识就是力量</a></li>
+									<li><span>[活动]</span><a href="#">我的梦中国梦</a></li>
+									<li><span>[活动]</span><a href="#">为中华之崛起而读书</a></li>
+									<li><span>[活动]</span><a href="#">冲冲冲</a></li>
+  							</ul>
+  						</li><li class="index_li_2">
+  							<a href="#">公告&nbsp;<span class="glyphicon glyphicon-bullhorn"></span></a>
+  							<ul class="sec_ul_2">
+  								<li><span>[公告]</span><a href="#">特此通知：诚信交易</a></li>
+									<li><span>[公告]</span><a href="#">请不要私下交易，谨防被骗</a></li>
+									<li><span>[公告]</span><a href="#">相信我们的平台</a></li>
+									<li><span>[公告]</span><a href="#">没有最专业</a></li>
+									<li><span>[公告]</span><a href="#">只有更专业</a></li>
+									<li><span>[公告]</span><a href="#">感谢大家的信赖</a></li>
+  							</ul>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!--分类部分-->
+  	<div class="container">
+  		<div class="book_new">
+  			<img src="img/big_img_2.jpg" />
+  		</div>
+  		<div id="book_class">
+  			<div id="book_man" class="book_set book_set_1">
+  				<h4>热卖精选</h4>
+  				<ol>
+  					<li>
+  						<em>1.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_1.jpg" />
+  						</a>
+  						<span><a href="details.html">活着</a></span>
+  						<p>余华/文学</p>
+  					</li>
+  					<li>
+  						<em>2.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_2.jpg" />
+  						</a>
+  						<span><a href="details.html">他来了请闭眼</a></span>
+  						<p>丁墨/小说</p>
+  					</li>
+  					<li>
+  						<em>3.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_3.jpg" />
+  						</a>
+  						<span><a href="details.html">人生</a></span>
+  						<p>路遥/文学</p>
+  					</li>
+  					<li>
+  						<em>4.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_4.jpg" />
+  						</a>
+  						<span><a href="details.html">Linux私房菜</a></span>
+  						<p>王式将/计算机</p>
+  					</li>
+  					
+  					<li>
+  						<em>5.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_5.jpg" />
+  						</a>
+  						<span><a href="details.html">金融市场基础知识</a></span>
+  						<p>中国证券业协会/考试</p>
+  					</li>
+  				</ol>
+  			</div>
+  			<div id="book_women" class="book_set book_set_1">
+  				<h4>考试精选</h4>
+  				<ol>
+  					<li>
+  						<em>1.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_6.jpg" />
+  						</a>
+  						<span><a href="details.html">证券市场基本法律法规</a></span>
+  						<p>中国证券业协会/考试</p>
+  					</li>
+  					<li>
+  						<em>2.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_7.jpg" />
+  						</a>
+  						<span><a href="details.html">期货基础知识</a></span>
+  						<p>西南财经大学出版社/考试</p>
+  					</li>
+  					<li>
+  						<em>3.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_8.jpg" />
+  						</a>
+  						<span><a href="details.html">计算机二级程序设计</a></span>
+  						<p>高等教育出版社/考试</p>
+  					</li>
+  					<li>
+  						<em>4.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_9.jpg" />
+  						</a>
+  						<span><a href="details.html">初级会计实务</a></span>
+  						<p>财政部会计资格评价中心/考试</p>
+  					</li>
+  					<li>
+  						<em>5.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_10.jpg" />
+  						</a>
+  						<span><a href="details.html">操作系统</a></span>
+  						<p>陈向群 等/计算机</p>
+  					</li>
+  				</ol>
+  			</div>
+  			<div id="book_hot" class="book_set book_set_1">
+  				<h4>分类精选</h4>
+  				<ol>
+  					<li>
+  						<em>1.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_11.jpg" />
+  						</a>
+  						<span><a href="details.html">C语言大学实用教程</a></span>
+  						<p>苏小红 等/计算机</p>
+  					</li>
+  					<li>
+  						<em>2.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_12.jpg" />
+  						</a>
+  						<span><a href="details.html">概率论与数理统计</a></span>
+  						<p>Richard/考试</p>
+  					</li>
+  					<li>
+  						<em>3.</em>
+  						<a href="details.html">
+								<img src="img/find_book_13.jpg" />	
+  						</a>
+  						<span><a href="details.html">计算机网络</a></span>
+  						<p>谢希仁/计算机</p>
+  					</li>
+  					<li>
+  						<em>4.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_14.jpg" />
+  						</a>
+  						<span><a href="details.html">罪与罚</a></span>
+  						<p>陀思妥耶夫斯基/小说</p>
+  					</li>
+  					<li>
+  						<em>5.</em>
+  						<a href="details.html">
+  							<img src="img/find_book_15.jpg" />
+  						</a>
+  						<span><a href="details.html">Ptyhon核心编程</a></span>
+  						<p>Mark/计算机</p>
+  					</li>
+  				</ol>
+  			</div>
+  			<div id="book_recommmend" class="book_set">
+  				<h4>强力推荐</h4>
+  				<ol>
+  					<li><a href="details.html">三生三世，十里桃花</a></li>
+  					<li><a href="details.html">斗破苍穹</a></li>
+  					<li><a href="details.html">高数详解</a></li>
+  					<li><a href="details.html">各种答案汇总</a></li>
+  					<li><a href="details.html">期末不挂科宝典</a></li>
+  					<li><a href="details.html">数据库系统原理</a></li>
+  					<li><a href="details.html">网页制作与美化</a></li>
+  					<li><a href="details.html">许三观卖血记</a></li>
+  					<li><a href="details.html">好吗好的</a></li>
+  					<li><a href="details.html">平凡的世界</a></li>
+  				</ol>
+  			</div>
+  		</div>
+  	</div>
+  	<div id="big_photo">
+  		<div class="photo_1">
+  			<div class="img_1">
+  				<span>白雪</span>
+  				<img src="img/img_1.jpg"/>
+  			</div>
+  			<div class="img_1">
+  				<span>房屋</span>
+  				<img src="img/img_2.jpg"/>
+  			</div>
+  			<div class="img_1">
+  				<span>一轮红日</span>
+  				<img src="img/img_3.jpg"/>
+  			</div>
+  			<div class="img_1">
+  				<span>倒影</span>
+  				<img src="img/img_8.jpg"/>
+  			</div>
+  		</div>
+  		<div class="photo_2">
+  			<div class="book_2">
+  				<div class="img_4">
+  					<span>树梢</span>
+  					<img src="img/img_4.jpg"/>
+  				</div>
+	  			<div class="img_4">
+	  				<span>都市生活</span>
+	  				<img src="img/img_5.jpg">
+	  			</div>
+	  			<div class="img_2">
+	  				<span>梅花鹿</span>
+	  				<img src="img/img_9.jpg">
+	  			</div>
+	  		</div>
+  			<div class="book_2">
+  				<div class="img_3">
+  					<span>可爱的小鸟</span>
+  					<img src="img/img_10.jpg">
+  				</div>
+  				<div class="img_4">
+  					<span>暴风雨</span>
+  					<img src="img/img_6.jpg">
+  				</div>
+	  			<div class="img_4">
+	  				<span>枫叶+白云</span>
+	  				<img src="img/img_7.jpg">
+	  			</div>
+  		</div>
+  	</div>
+	  </div>
+  	<div class="container">
+  		<div class="classify_1 h3_position">
+  			<h3>经典书库</h3>
+  			<div class="left_btn">
+  				<a href=""><span class="glyphicon glyphicon-menu-left"></span></a>
+  			</div>
+  			<div class="right_btn">
+  				<a href=""><span class="glyphicon glyphicon-menu-right"></span></a>
+  			</div>
+  			<div class="move_img">
+  				<ul>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  				</ul>
+  			</div>
+  			<div class="book_bottom">
+  				<div class="book_class_1">
+  					<h4>国学</h4>
+  					<ul>
+  						<li><a href="details.html">东坡易传</a></li>
+  						<li><a href="details.html">史记</a></li>
+  						<li><a href="details.html">资治通鉴</a></li>
+  						<li><a href="details.html">周易</a></li>
+  						<li><a href="details.html">三十六计</a></li>
+  					</ul>
+  					<div class="more_btn">
+  						<a href="stack.html">更多&nbsp;<span class="glyphicon glyphicon-send"></span></a>
+  					</div>
+  				</div>
+  				<div class="book_class_1">
+  					<h4>外国文学</h4>
+  					<ul>
+  						<li><a href="details.html">小王子</a></li>
+  						<li><a href="details.html">我的大学</a></li>
+  						<li><a href="details.html">在人间</a></li>
+  						<li><a href="details.html">童年</a></li>
+  						<li><a href="details.html">钢铁是怎么炼成的</a></li>
+  					</ul>
+  					<div class="more_btn">
+  						<a href="stack.html">更多&nbsp;<span class="glyphicon glyphicon-send"></span></a>
+  					</div>
+  				</div>
+  				<div class="book_class_1">
+  					<h4>前沿著作</h4>
+  					<ul>
+  						<li><a href="details.html">Java面试题</a></li>
+  						<li><a href="details.html">Bootstrap实战</a></li>
+  						<li><a href="details.html">javaScript DOM的编程艺术</a></li>
+  						<li><a href="details.html">物联网与现代物流</a></li>
+  						<li><a href="details.html">第一行代码</a></li>
+  					</ul>
+  					<div class="more_btn">
+  						<a href="stack.html">更多&nbsp;<span class="glyphicon glyphicon-send"></span></a>
+  					</div>
+  				</div>
+  				<div class="book_class_1">
+  					<h4>人生感悟</h4>
+  					<ul>
+  						<li><a href="details.html">解忧杂货店</a></li>
+  						<li><a href="details.html">从你的全世界路过</a></li>
+  						<li><a href="details.html">追风筝的人</a></li>
+  						<li><a href="details.html">看见</a></li>
+  						<li><a href="details.html">悍刀雪中行</a></li>
+  					</ul>
+  					<div class="more_btn">
+  						<a href="stack.html">更多&nbsp;<span class="glyphicon glyphicon-send"></span></a>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<!--中间内容的填充-->
+  		<div class="fill_content">
+  			<img src="img/big_img_2.jpg" />
+  		</div>
+  		<div class="classify_2 h3_position">
+  			<h3>考研专题</h3>
+  			<div class="left_btn">
+  				<a href=""><span class="glyphicon glyphicon-menu-left"></span></a>
+  			</div>
+  			<div class="right_btn">
+  				<a href=""><span class="glyphicon glyphicon-menu-right"></span></a>
+  			</div>
+  			<div class="move_img">
+  				<ul>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学</p>
+  					</li>
+  					<li>
+  						<a href="details.html">
+  							<img src="img/move_1.jpg" />
+  						</a>
+  						<span><a href="details.html">大学的意义</a></span>
+  						<p>陈春花/文学/p>
+  					</li>
+  				</ul>
+  			</div>
+  			<div class="book_bottom">
+  				<div class="book_class_1">
+  					<h4>数学</h4>
+  					<ul>
+  						<li><a href="details.html">概率论</a></li>
+  						<li><a href="details.html">离散数学</a></li>
+  						<li><a href="details.html">高等数学</a></li>
+  						<li><a href="details.html">高等数学（上）</a></li>
+  						<li><a href="details.html">高等数学（下）</a></li>
+  					</ul>
+  					<div class="more_btn">
+  						<a href="stack.html">更多&nbsp;<span class="glyphicon glyphicon-send"></span></a>
+  					</div>
+  				</div>
+  				<div class="book_class_1">
+  					<h4>英语</h4>
+  					<ul>
+  						<li><a href="details.html">新概念</a></li>
+  						<li><a href="details.html">大学英语</a></li>
+  						<li><a href="details.html">英语写作</a></li>
+  						<li><a href="details.html">英语阅读和听力</a></li>
+  						<li><a href="details.html">英语专项训练</a></li>
+  					</ul>
+  					<div class="more_btn">
+  						<a href="stack.html">更多&nbsp;<span class="glyphicon glyphicon-send"></span></a>
+  					</div>
+  				</div>
+  				<div class="book_class_1">
+  					<h4>政治</h4>
+  					<ul>
+  						<li><a href="details.html">马克思主义</a></li>
+  						<li><a href="details.html">毛泽东思想</a></li>
+  						<li><a href="details.html">邓小平理论</a></li>
+  						<li><a href="details.html">科技是第一生产力</a></li>
+  						<li><a href="details.html">政治考题汇总</a></li>
+  					</ul>
+  					<div class="more_btn">
+  						<a href="stack.html">更多&nbsp;<span class="glyphicon glyphicon-send"></span></a>
+  					</div>
+  				</div>
+  				<div class="book_class_1">
+  					<h4>专业课</h4>
+  					<ul>
+  						<li><a href="details.html">数学类</a></li>
+  						<li><a href="details.html">文学类</a></li>
+  						<li><a href="details.html">计算机类</a></li>
+  						<li><a href="details.html">金融类</a></li>
+  						<li><a href="details.html">英语类</a></li>
+  					</ul>
+  					<div class="more_btn">
+  						<a href="stack.html">更多&nbsp;<span class="glyphicon glyphicon-send"></span></a>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<footer class="tail">
+		<div class="bottom">
+			<div class="ziQ">
+				<ul>
+					<li><a>关于我们</a></li>
+					<li><a>服务协议</a></li>
+					<li><a>隐私保护政策</a></li>
+					<li><a>使用指南</a></li>
+					<li><a>联系我们</a></li>
+					<li><a>加入我们</a></li>
+					<li><a>友情链接</a></li>
+					<li><a>私信书海拾贝</a></li>
+				</ul>
+				<p>公司名称：书海拾贝有限责任公司</p>
+				<p> 公司地址：山西财经大学</p>
+				<p> 联系电话：110 </p>
+			</div>
+		</div>
+  	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

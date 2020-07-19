@@ -1,0 +1,220 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+a{
+	color: #000000;
+}
+.register{
+	display: inline-block;
+	float: right;
+}
+.register a{
+	margin-left: 10px;
+	margin-right: 0;
+}
+/*中间图标和搜索框*/
+.logo {
+    margin: 40px auto;
+    width: 300px;
+}
+.logo_logo {
+    position: absolute;
+    width: 284px;
+    height: 91px;
+    margin-top: -135px;
+}
+.logo_logo img:hover{
+	transform: scale(1);
+}
+.logo h1{
+	margin-left: 16px;
+}
+.search input[type="text"]{
+	width: 258px;
+    height: 37px;
+    border: 3px solid rgba(182,29,29,1.0);
+    padding-left: 5px;
+    float: left;
+}
+.search>.btn{
+	font-size: 22px;
+	width: 40px;
+	height: 35px;
+	padding: 0;
+	box-sizing: content-box;
+	background-color: rgba(182,29,29,1.0);
+	color: white;
+	border-radius: inherit;
+	float: left;
+}
+.search_bottom{
+	font-size: 11px;
+}
+.search_bottom a:hover{
+	color: red;
+}
+.icon_logo{
+	position: relative;
+	float: right;
+	width: 200px;
+	height: 80px;
+}
+.icon_logo figure{
+	display: inline-block;
+	font-size: 12px;
+	color: #999999;
+	margin: 5px;
+	text-align: center;
+	float: right;
+}
+.icon_logo figure:first-child{
+	margin-right: 0;
+}
+.container {
+    min-width: 1170px;
+}
+#header {
+    background-color: rgba(123,123,123,0.4);
+    min-width: 1170px;
+}
+/*导航栏部分*/
+#nav_main {
+    border-bottom: 2px solid rgba(182,29,29,1.0);
+    margin-bottom: 15px;
+    min-width: 1170px;
+    background-color: #F8F8F8;
+}
+.hp_ul li {
+    display: inline-block;
+    width: 125px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.hp_ul .glyphicon{
+	top: 2px;
+}
+.hp_ul li a:hover{
+	color: rgba(182,29,29,1.0);
+}
+.hp_ul {
+    margin-bottom: 0px;
+}
+.hp_ul .active {
+    background-color: rgba(182,29,29,1.0);
+}
+.hp_ul .active a{
+	color: white;
+}
+.hp_ul .active a:hover{
+	color: white;
+}
+
+
+/*客户端模块*/
+.cli_centers {
+    width: 90%;
+}
+
+.cli_left {
+    width: 40%;
+    float: left;
+}
+.cli_center {
+    float: left;
+    width: 40%;
+}
+.cli_right {
+    width: 60%;
+    float: left;
+}
+.cli_phone_img {
+    width: 360px;
+    height: 600px;
+    border: 1px solid crimson;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px #ccc;
+}
+.cli_phone_icon {
+    width: 615px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.cli_phone_icon img{
+	width: 615px;
+    height: 200px;
+}
+#cli_android {
+    width: 260px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    font-size: 27px;
+    letter-spacing: 1px;
+    background-color: rgba(182,29,29,1.0);
+    color: white;
+    border-radius: 30px;
+}
+#cli_ios {
+    width: 260px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    font-size: 27px;
+    letter-spacing: 1px;
+    background-color: rgba(182,29,29,1.0);
+    color: white;
+    border-radius: 30px;
+}
+.cli_code {
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+}
+.btn_download {
+	float: left;
+    width: 50%;
+    height: 380px;
+    position: relative;
+}
+.btn_download:first-child{
+	border-right: 1px solid #DDDDDD;
+}
+.btn_img_1 {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+    margin-left: 28px;
+    margin-top: 13px;
+    overflow: hidden;
+    border-radius: 65px;
+}
+.btn_img_1 img{
+	width: 250px;
+	height: 250px;
+}
+
+/*尾部声明*/
+.tail{
+	clear: both;
+	height: 140px;
+	margin-top: 100px;
+	background-color: #737373;
+	min-width: 1170px;
+}

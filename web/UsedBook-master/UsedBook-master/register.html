@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二手书交易平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="./css/shop.css"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="container">
+  		<div id="reg_header">
+  			<div class="login_logo">
+  				<img src="img/logo.png" />
+  			</div>
+  			<h1>欢迎注册</h1>
+  			<div class="login_sapn">返回&nbsp;<a href="login.html">登录&nbsp;<span class="glyphicon glyphicon-log-out"></span></a></div>
+  		</div>
+  		<div class="login_center">
+  			<div class="login_left">
+  				<div class="login_body">
+  					<form id="login_form" action="" method="get">
+	  					<ul>
+	  						<li>
+	  							<label for="name">用户名</label>
+	  							<input type="text" id="name" class="required" name="name" placeholder="你的昵称"/>
+	  						</li>
+	  						<li>
+	  							<label for="password">设置密码</label>
+	  							<input type="text" id="password" class="required" name="password" placeholder="设置的复杂点啊"/>
+	  						</li>
+	  						<li>
+	  							<label for="repassword">确认密码</label>
+	  							<input type="text" id="repassword" class="required" name="repassword" placeholder="和上面一样"/>
+	  						</li>
+	  						<li>
+	  							<label for="email">邮箱</label>
+	  							<input type="text" id="email" class="required" name="email" placeholder="最好是常用邮箱"/>
+	  						</li>
+							<li>
+								<label for="gender">性别</label>
+								<select class="required" id="gender" name="gender">
+									<option value="1">男</option>
+									<option value="2">女</option>
+								</select>
+							</li>
+							<li>
+								<label for="age">年龄</label>
+								<input type="text" id="age" class="required" name="age" placeholder="请填写年龄"/>
+							</li>
+							<li>
+								<label for="place">住址</label>
+								<input type="text" id="place" class="required" name="place" placeholder="请填写住址"/>
+							</li>
+							<li>
+								<label for="introduce">自我介绍</label>
+								<input type="text" id="introduce" class="required" name="introduce" placeholder="请填写自我介绍"/>
+							</li>
+<!--	  						<li>-->
+<!--	  							<label for="ver_code">验证码</label>-->
+<!--	  							<input type="text" id="ver_code" class="required" name="ver_code" placeholder="后面的奇怪图片"/>-->
+<!--	  							<div class="ver_code_img">-->
+<!--	  							</div>-->
+<!--	  						</li>-->
+	  					</ul>
+	  					<div class="login_btn">
+	  						<input type="checkbox" id="checkbox" name="checkbox" value="520"/>&nbsp;<span>《二手书注册协议》</span>
+	  						<button class="btn btn-default" type="button" id="login_btn">立即注册</button>
+	  					</div>
+  					</form>
+  				</div>
+  			</div>
+  			<div class="login_right">
+  				<div class="login_partner">
+  					<h3>合作伙伴</h3>
+  					<figure>
+	  					<img src="img/login_1.jpg" />
+	  					<figcaption><a href="http://www.chtc.edu.cn/">山西财经大学</a></figcaption>
+	  				</figure>
+  				</div>
+  			</div>
+  		</div>
+  		
+  		
+  	</div>
+  	
+  	<footer class="tail">
+		<div class="bottom">
+			<div class="ziQ">
+				<ul>
+					<li><a>关于我们</a></li>
+					<li><a>服务协议</a></li>
+					<li><a>隐私保护政策</a></li>
+					<li><a>使用指南</a></li>
+					<li><a>联系我们</a></li>
+					<li><a>加入我们</a></li>
+					<li><a>友情链接</a></li>
+					<li><a>私信书海拾贝</a></li>
+				</ul>
+				<p>公司名称：书海拾贝有限责任公司</p>
+				<p> 公司地址：山西财经大学</p>
+				<p> 联系电话：110 </p>
+			</div>
+		</div>
+  	</footer>
+  	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

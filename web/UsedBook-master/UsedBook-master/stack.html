@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二手书交易平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stack.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="./css/shop.css"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<!--网页最上面的横条-->
+  	<div id="header">
+  		<div class="container">
+  			<span>专业二手书商城</span>
+  			<div class="register">
+  				<a href="personal.html">个人中心</a>
+  				<a href="login.html">登录&nbsp;<span class="glyphicon glyphicon-user"></span></a>
+  				<a href="login.html">注销&nbsp;<sapn class="glyphicon glyphicon-off"></span></a>
+  			</div>
+  		</div>
+  	</div>
+  	<!--中间的logn 搜索框 以及图标位置 部分-->
+  	<div id="logn" class="container">
+  		<div class="logo">
+  			<h1>For-Knowledge</h1>
+  			<div class="input-group search">
+  				<input type="text" class="" placeholder="请输入搜索的内容"><button class="btn"><span class="glyphicon glyphicon-search"></span></button>
+  			</div>
+  			<div class="search_bottom">
+				<span>热搜：<a href="#" class="">高等数学</a>|<a href="#" class="">概率论与数理统计</a>|<a href="#" class="">计算机二级</a>|<a href="#" class="">初级会计</a></span>
+			</div>
+  		</div>
+  		<div class="logo_logo">
+  			<img src="img/logo.png" />
+  		</div>
+  	</div>
+  	
+  	<nav id="nav_main" >
+  		<div class="container">
+	  		<ul class="hp_ul">
+	  			<li><a href="home_page.html"><!--<span class="glyphicon glyphicon-home"></span>&nbsp;-->首页</a></li><li class="active">
+	  				<a href="stack.html"><span class="glyphicon glyphicon-th-list"></span>&nbsp;书库</a></li><li >
+	  				<a href="wish_list.html"><!--<span class="glyphicon glyphicon-list-alt"></span>&nbsp;-->心愿单</a></li><li>
+	  				<a href="sell_book.html"><!--<span class="glyphicon glyphicon-log-in"></span>&nbsp;-->卖书</a></li><li >
+	  				<a href="bookcase.html"><!--<span class="glyphicon glyphicon-tasks"></span>&nbsp;-->书架</a></li><li >
+	  				<a href="client.html"><!--<span class="glyphicon glyphicon-phone"></span>&nbsp;-->订单详情</a></li><li >
+	  				<a href="order.html"><!--<span class="glyphicon glyphicon-phone"></span>&nbsp;-->我的订单</a></li><li >
+	  				<a href="community.html"><!--<span class="glyphicon glyphicon-comment"></span>&nbsp;-->社区</a></li>
+	  		</ul>
+  		</div>
+  	</nav>
+  	
+  	<!--书籍的分类-->
+  	<div id="screen" class="container">
+  		<div class="screen">
+  			<span>书籍语言</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>中文</li>
+  				<li>英语</li>
+  				<li>日语</li>
+  				<li>韩语</li>
+  				<li>德文</li>
+  				<li>其他</li>
+  			</ul>
+  		</div>
+  		<div class="screen">
+  			<span>书籍种类</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>考研</li>
+  				<li>学习</li>
+  				<li>小说</li>
+  				<li>科普</li>
+  				<li>法律</li>
+  				<li>经济</li>
+  				<li>哲学</li>
+  				<li>历史</li>
+  				<li>休闲</li>
+  				<li>其他</li>
+  			</ul>
+  		</div>
+  		<div class="screen">
+  			<span>书籍新旧</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>九成新</li>
+  				<li>七成新</li>
+  				<li>五成新</li>
+  				<li>三成新</li>
+  				<li>一成新</li>
+  			</ul>
+  		</div>
+  		<div class="screen">
+  			<span>发布时间</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>今日</li>
+  				<li>三日内</li>
+  				<li>一个星期</li>
+  				<li>半个月</li>
+  				<li>一个月</li>
+  			</ul>
+  		</div>
+  		<div class="screen">
+  			<span>书籍价格</span>
+  			<ul>
+  				<li class="active">全部</li>
+  				<li>低于10元</li>
+  				<li>10元到30元</li>
+  				<li>30元到50元</li>
+  				<li>50元到100元</li>
+  				<li>高于100元</li>
+  			</ul>
+  		</div>
+  	</div>
+  	
+  	<!--主体销售-->
+  	<div id="book_sell" class="container">
+  				<div id="to_shopping">
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_15.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">初级会计</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="button" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							正版初级会计职称2020教材全套初级会计实务经济法基础考试视频历年真题题库试题试卷初级会计职称2020教材初会官方正版辅导教材书 。
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+		  							<img src="img/book_31.jpg" />
+		  						</a>
+		  					</div>
+		  					<span class="hidden_span">C语言大学实用教程</span>
+		  					<p class="money">￥55.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							本书是“十二五”普通高等教育本科国家级规划教材和哈尔滨工业大学国家精品课程教材。本书是一本充满趣味性和实用性的大学C语言教材，适合作为大学各专业公共课教材、ACM程序设计大赛培训教材和全国计算机等级考试参考书。
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_22.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">概率论与数理统计</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							本书是为工程、物理等专业本科低年级学生准备的入门教材,内容全面、编排合理，各章之间的衔接较为密切，附录中还提供了大量的常用统计表。
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  						<div class="book_lock">
+		  					<a href="details.html">
+		  						<img src="img/book_05.jpg" />
+		  					</a>
+		  				</div>
+	  					<span class="hidden_span">情书</span>
+	  					<p class="money">￥49.9</p>
+	  					<div class="btn_find">
+								<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+							</div>
+	  					<span class="info_book_right">
+	  						<a href="details.html">
+	  							日本神户某个飘雪的冬日，渡边博子（中山美穗）在前未婚夫藤井树的三周年祭日上又一次悲痛到不能自已。正因为无法抑制住对已逝恋人的思念，渡边博子在其中学同学录里发现“藤井树” 在小樽市读书时的地址时，依循着寄发了一封本以为是发往天国的情书。
+	  						</a>
+	  					</span>
+	  				</div>
+	  				<div class="right_books">
+	  					<div class="book_lock">
+		  					<a href="details.html">
+		  						<img src="img/book_03.jpg" />
+		  					</a>
+		  				</div>
+	  					<span class="hidden_span">人生</span>
+	  					<p class="money">￥68.8</p>
+	  					<div class="btn_find">
+								<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+							</div>
+	  					<span class="info_book_right">
+	  						<a href="details.html">
+	  							路遥的一部中篇小说，发表于1982年，它以改革时期陕北高原的城乡生活为时空背景，叙述了高中毕业生高加林回到土地又离开土地，再回到土地这样人生的变化过程。高加林同农村姑娘刘巧珍、城市姑娘黄亚萍之间的感情纠葛构成了故事发展的矛盾，也正是体现那种艰难选择的悲剧。
+	  						</a>
+	  					</span>
+	  				</div>
+	  				<div class="right_books">
+	  					<div class="book_lock">
+		  					<a href="details.html">
+		  						<img src="img/book_06.jpg" />
+		  					</a>
+		  					</div>
+	  					<span class="hidden_span">python核心编程</span>
+	  					<p class="money">￥50</p>
+	  					<div class="btn_find">
+								<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+							</div>
+	  					<span class="info_book_right">
+	  						<a href="details.html">
+	  							是经典畅销图书《Python核心编程（第二版）》的全新升级版本。包括正则表达式、网络编程、Internet客户端编程、多线程编程、GUI编程、数据库编程、Microsoft Office编程、扩展Python等内容，适合具有一定经验的Python开发人员阅读。
+	  						</a>
+	  					</span>
+	  				</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_01.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">活着</span>
+		  					<p class="money">￥58.8</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							从国民党统治后期到解放战争、土改运动，再到全民大炼钢运动，随后的自然灾害时期等，《活着》讲述一个人的一生的经历
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_02.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">他来了，请闭眼</span>
+		  					<p class="money">￥45.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							丁墨编著的爱情小说。我把他从孤独的世界，带回繁华温暖的都市。他却牵引着我，从平静平凡的生活，走向刺激又肆意的人生。
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_07.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">JavaScript DOM编程艺术</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="#">
+		  							本书是超级畅销书的升级版，由倡导Web标准的领军人物执笔，揭示了前端开发的真谛，是学习JavaScript和DOM开发的必读之作。
+		  						</a>
+		  					</span>
+  						</div>
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_04.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">三国演义</span>
+		  					<p class="money">￥68.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							从东汉末年到西晋初年之间近105年的历史风云，以描写战争为主，
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_11.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">Linux</span>
+		  					<p class="money">￥68.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							本书内容丰富全面，基本概念的讲解非常细致，深入浅出。各种功能和命令的介绍，都配以大量的实例操作和详尽的解析。本书是初学者学习Linux不可多得的一本入门好书。
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_09.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">Redis设计与实现</span>
+		  					<p class="money">￥68.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							Redis是近些年来特别火爆的NoSQL之一。本书讲解了Redis的内部机制与实现方式，对Redis的大多数单机功能以及所有多机功能的实现原理进行了介绍，展示了这些功能的核心数据结构以及关键的算法思想，并给出大量参考信息。
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_10.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">数据结构与算法分析</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							作者精炼并强化了他对算法和数据结构方面创新的处理方法。通过C程序的实现，着重阐述了抽象数据类型的概念，并对算法的效率、性能和运行时间进行了分析。收到广泛好评。
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_12.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">学会自己长大</span>
+		  					<p class="money">￥42.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							关于学业、情感、青春与梦想，北大博士、新锐教育专家和 云峰为青少年量身打造的青春自助手册，献给在成长中感到困惑无助又不肯屈服的你！
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_13.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">大学的意义</span>
+		  					<p class="money">￥38.8</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							陈春花老师从教30年的精神作品，价值观和人生观的全面呈现，衡量我们是否创造了价值，一个重要的尺度就是看我们在生活中能不能继续生长
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+		  					<a href="details.html">
+		  						<img src="img/book_14.jpg" />
+		  					</a>
+		  					</div>
+		  					<span class="hidden_span">金融市场基础知识</span>
+		  					<p class="money">￥46.5</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							整体知识架构和具体知识编排上，严格依据了新考试大纲，全面涵盖了新考纲上的核心知识考点。
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_16.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">计算机二级</span>
+		  					<p class="money">￥49.9</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							官方正版 2020全国计算机等级考试二级教程 Java语言程序设计+公共基础知识 计算机等级考试 教育部考试中心 高等教育出版社。
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_23.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">操作系统</span>
+		  					<p class="money">￥43.0</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							本书既是关于操作系统概念、结构和机制的教材，目的是尽可能清楚和全面地展示现代操作系统的本质和特点
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						
+  						<div class="right_books">
+  							<div class="book_lock">
+			  					<a href="details.html">
+			  						<img src="img/book_10.jpg" />
+			  					</a>
+		  					</div>
+		  					<span class="hidden_span">数据结构与算法分析</span>
+		  					<p class="money">￥66.6</p>
+		  					<div class="btn_find">
+									<button class="btn" type="button" name="btn" type="submit" id="btn_look" onclick="window.open('details.html')"/>去看看</button>
+								</div>
+		  					<span class="info_book_right">
+		  						<a href="details.html">
+		  							作者精炼并强化了他对算法和数据结构方面创新的处理方法。通过C程序的实现，着重阐述了抽象数据类型的概念，并对算法的效率、性能和运行时间进行了分析。收到广泛好评。
+		  						</a>
+		  					</span>
+  						</div>
+  						
+  						<div class="page_index ">
+  							<ul id="ul_icon">
+									<li class="active"><a href="#">1</a></li><li>
+										<a href="#">2</a></li><li>
+										<a href="#">3</a></li><li>
+										<a href="#">4</a></li><li>
+										<a href="#">5</a></li><li>
+										<a href="#">6</a></li><li>
+										<a href="#">7</a></li><li>
+										<a href="#">8</a></li>
+  							</ul>
+  							<button id="stack_ul_btn" >下一页</button>
+  						</div>
+  				</div>
+  	</div>
+  	<footer class="tail">
+		<div class="bottom">
+			<div class="ziQ">
+				<ul>
+					<li><a>关于我们</a></li>
+					<li><a>服务协议</a></li>
+					<li><a>隐私保护政策</a></li>
+					<li><a>使用指南</a></li>
+					<li><a>联系我们</a></li>
+					<li><a>加入我们</a></li>
+					<li><a>友情链接</a></li>
+					<li><a>私信书海拾贝</a></li>
+				</ul>
+				<p>公司名称：书海拾贝有限责任公司</p>
+				<p> 公司地址：山西财经大学</p>
+				<p> 联系电话：110 </p>
+			</div>
+		</div>
+  	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

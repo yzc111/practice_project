@@ -1,0 +1,327 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+a{
+	color: #000000;
+}
+.register{
+	display: inline-block;
+	float: right;
+}
+.register a{
+	margin-left: 10px;
+	margin-right: 0;
+}
+/*中间图标和搜索框*/
+.logo {
+    margin: 40px auto;
+    width: 300px;
+}
+.logo_logo {
+    position: absolute;
+    width: 284px;
+    height: 91px;
+    margin-top: -135px;
+}
+.logo_logo img:hover{
+	transform: scale(1);
+}
+.logo h1{
+	margin-left: 16px;
+}
+.search input[type="text"]{
+	width: 258px;
+    height: 37px;
+    border: 3px solid rgba(182,29,29,1.0);
+    padding-left: 5px;
+    float: left;
+}
+.search>.btn{
+	font-size: 22px;
+	width: 40px;
+	height: 35px;
+	padding: 0;
+	box-sizing: content-box;
+	background-color: rgba(182,29,29,1.0);
+	color: white;
+	border-radius: inherit;
+	float: left;
+}
+.search_bottom{
+	font-size: 11px;
+}
+.search_bottom a:hover{
+	color: red;
+}
+.icon_logo{
+	position: relative;
+	float: right;
+	width: 200px;
+	height: 80px;
+}
+.icon_logo figure{
+	display: inline-block;
+	font-size: 12px;
+	color: #999999;
+	margin: 5px;
+	text-align: center;
+	float: right;
+}
+.icon_logo figure:first-child{
+	margin-right: 0;
+}
+.container {
+    min-width: 1170px;
+}
+#header {
+    background-color: rgba(123,123,123,0.4);
+    min-width: 1170px;
+}
+/*导航栏部分*/
+#nav_main {
+    border-bottom: 2px solid rgba(182,29,29,1.0);
+    margin-bottom: 15px;
+    min-width: 1170px;
+    background-color: #F8F8F8;
+}
+.hp_ul li {
+    display: inline-block;
+    width: 125px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.hp_ul .glyphicon{
+	top: 2px;
+}
+.hp_ul li a:hover{
+	color: rgba(182,29,29,1.0);
+}
+.hp_ul {
+    margin-bottom: 0px;
+}
+.hp_ul .active {
+    background-color: rgba(182,29,29,1.0);
+}
+.hp_ul .active a{
+	color: white;
+}
+.hp_ul .active a:hover{
+	color: white;
+}
+
+/*社区*/
+.com_img {
+    height: 150px;
+	border-radius: 7px;
+	overflow: hidden;
+}
+.com_nav {
+    height: 50px;
+	border: 2px solid rgba(182,29,29,1.0);
+	border-radius: 3px;
+	width: 458px;
+	margin: 20px auto;
+}
+.com_nav li{
+	display: inline-block;
+	font-size: 20px;
+	padding: 0 55px;
+	border-right: 2px solid rgba(182,29,29,1.0);
+	line-height: 46px;
+}
+.com_nav li:nth-child(3){
+	border-right: none;
+}
+.com_body {
+    border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	margin: 20px auto;
+}
+.com_comment {
+    width: 80%;
+	height: 210px;
+	border: 2px solid #aaa;
+	margin: 5px auto;
+	padding-top: 10px;
+	border-radius: 5px;
+}
+.com_topic span {
+    margin-left: 33px;
+    font-size: 18px;
+}
+.com_content span {
+    font-size: 18px;
+    margin-left: 32px;
+    position: absolute;
+}
+.com_others {
+    width: 80%;
+	margin: 70px auto;
+	position: relative;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 23px;
+}
+#com_topic {
+    width: 650px;
+	border: 1px solid #777;
+	margin-left: 19px;
+	height: 34px;
+	font-size: 15px;
+	border-radius: 4px;
+	padding-left: 5px;
+}
+#com_text {
+    border: 1px solid #777;
+	margin-left: 91px;
+	margin-top: 4px;
+	width: 740px;
+	height: 146px;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 15px;
+}
+#com_btn {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 21px;
+    background-color: #666;
+    color: white;
+}
+.com_icon_btn_2{
+	display: none;
+}
+/*评论区*/
+.com_hide {
+    margin-top: 40px;
+    display: none;
+}
+.com_person {
+    float: left;
+	padding: 5px;
+	width: 100px;
+}
+.com_pho {
+    width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	margin-left: 20px;
+	border: 1px solid #666666;
+	overflow: hidden;
+}
+.com_name {
+    text-align: center;
+    margin-top: 6px;
+    color: green;
+    overflow: hidden;
+}
+.com_text {
+    width: 800px;
+	margin-left: 105px;
+}
+.com_span {
+    font-size: 14px;
+    color: #444;
+    text-indent: 28px;
+}
+.ld_icon:hover{
+	cursor: cell;
+	color: red;
+}
+.com_icon1 {
+    position: relative;
+    float: right;
+    margin-right:5px;
+}
+.com_icon2 {
+    position: relative;
+    float: right;
+    margin-right:10px;
+}
+.com_icon3 {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    font-size: 18px;
+}
+.com_icon3:hover{
+	cursor: pointer;
+}
+.com_person time {
+    font-size: 12px;
+	margin-left: 12px;
+	position: absolute;
+	margin-top: 10px;
+}
+.com_com {
+    height: 62px;
+    width: 740px;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.com_com_img {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.com_com_img {
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.com_com_com {
+    float: left;
+    width: 670px;
+    margin-left: 9px;
+    position: relative;
+}
+.com_com_name {
+    height: 25px;
+    float: left;
+    margin-top: 5px;
+    color: green;
+    padding-top: 1px;
+    padding-left: 5px;
+    font-size: 17px;
+    margin-right: 10px;
+}
+.com_com_time {
+    height: 25px;
+    float: left;
+    width: 100px;
+    margin-top: 6px;
+    font-size: 13px;
+    padding-top: 5px;
+}
+.com_com_p {
+    clear: both;
+    height: 25px;
+    margin-top: 37px;
+}
+.com_com_p span {
+    color: green;
+}
+.com_com_icon {
+    position: absolute;
+    right: 0;
+}
+
+/*尾部声明*/
+.tail{
+	clear: both;
+	height: 140px;
+	margin-top: 100px;
+	background-color: #737373;
+	min-width: 1170px;
+}

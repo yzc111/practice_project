@@ -1,0 +1,37 @@
+div,ul,li,body,html,strong,dl,dd,dt,em,input,h2,h3,h4,h5,h6,p,img,button,a,select{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	border: 0;
+	/*background: none;*/
+}
+h1{
+font-size：11px;
+}
+a{
+	text-decoration: none;
+	color: #656565;
+}
+ul{
+	list-style-type: none;
+}
+.comWidth{
+	width: 1000px;
+	margin: 0 auto;
+}
+input {
+	outline: none;
+	border: 0;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.cl{
+	clear: both;
+}
+.hedden{
+	display: none;
+}

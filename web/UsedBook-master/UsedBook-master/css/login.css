@@ -1,0 +1,149 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+.container {
+    min-width: 1170px;
+}
+a{
+	color: #666666;
+}
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+#reg_header{
+	height:150px;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 20px;
+}
+.login_logo {
+    margin-top: 26px;
+    float: left;
+}
+#reg_header h1 {
+    width: 148px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 48px;
+}
+.login_sapn {
+    position: relative;
+    float: right;
+    margin-top: 112px;
+    font-size: 18px;
+}
+.login_left {
+    width: 70%;
+    float: left;
+    border-right: 1px solid #CCCCCC;
+}
+.login_right {
+    float: left;
+    width: 30%;
+}
+.login_body {
+    width: 500px;
+    margin: 20px auto;
+}
+.login_body li {
+    display: block;
+	margin-top: 45px;
+	border: 1px solid #ccc;
+	padding: 2px 5px;
+	width: 370px;
+	position: relative;
+}
+.login_body label {
+    font-weight: 300;
+    text-align: center;
+    width: 100px;
+    border-right: 1px solid #CCCCCC;
+}
+input[type="text"] {
+    border: none;
+    width: 250px;
+    height: 40px;
+}
+.login_btn {
+    margin-left: 40px;
+	margin-top: 35px;
+}
+.login_btn span {
+    font-size: 12px;
+	color: green;
+	position: absolute;
+	margin-left: 12px;
+	margin-top: 1px;
+}
+#login_btn {
+    position: absolute;
+    margin-top: 40px;
+    width: 370px;
+    height: 45px;
+    margin-left: -4px;
+    background-color: rgba(182,29,29,1.0);
+    color: white;
+    font-size: 17px;
+}
+#checkbox {
+    position: absolute;
+}
+#ver_code {
+    width: 155px;
+}
+.login_partner {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.login_partner h3 {
+    padding-left: 80px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.login_partner figure {
+    margin-left: 55px;
+    width: 150px;
+    margin-top: 40px;
+}
+.login_partner figcaption {
+    text-align: center;
+    margin-top: 5px;
+    color: #666;
+    letter-spacing: 8px;
+    font-size: 15px;
+}
+.ver_code_img {
+    position: absolute;
+    height: 45px;
+    width: 100px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    border-left: 1px solid #ccc;
+}
+
+.formtips.onError {
+    position: absolute;
+    top: 48px;
+    left: 15px;
+    color: red;
+}
+.formtips.onSuccess {
+    position: absolute;
+    left: 18px;
+    margin-top: 47px;
+    color: green;
+}
+
+/*尾部声明*/
+.tail{
+	clear: both;
+	height: 140px;
+	margin-top: 100px;
+	background-color: #737373;
+	min-width: 1170px;
+}

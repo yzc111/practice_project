@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二手书交易平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/personal.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="./css/shop.css"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div id="header">
+  		<div class="container">
+  			<span>专业二手书商城</span>
+  			<div class="register">
+  				<a href="personal.html">个人中心</a>
+  				<a href="login.html">登录&nbsp;<span class="glyphicon glyphicon-user"></span></a>
+  				<a href="login.html">注销&nbsp;<span class="glyphicon glyphicon-off"></span></a>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="container">
+  		<div id="reg_header">
+  			<div class="login_logo">
+  				<img src="img/logo.png" />
+  			</div>
+  			<h1>个人中心</h1>
+  			<div class="login_sapn">返回&nbsp;<a href="home_page.html">首页&nbsp;<span class="glyphicon glyphicon-log-out"></span></a></div>
+  		</div>
+  		<div class="per_left">
+  			<div id="per_person" class="window_on">
+					<div class="per_color">
+						<div class="per_img">
+							<img src="img/ren2.jpg" class="img-circle"/>
+						</div>
+						<div class="per_name">
+							<span>电子商务一班</span>
+						</div>
+					</div>
+					<ul>
+						<li><a href="#per_first">基本资料</a></li>
+						<li><a href="#per_second">用户头像</a></li>
+<!--						<li><a href="#per_third">修改密码</a></li>-->
+						<li><a href="#per_fourth">以往记录</a></li>
+					</ul>
+				</div>
+  		</div>
+  		<div class="per_right">
+<!--  			<button id="per_btn" class="btn btn-default">修改</button>-->
+  			<div class="per_first">
+	  			<h3 id="per_first">基本资料</h3>
+	  			<ul>
+	  				<li><span>姓名</span><p><input id="name" readonly="readonly" style="border:none;"></p></li>
+	  				<li><span>性别</span><p><input id="gender" readonly="readonly" style="border:none;"></p></li>
+	  				<li><span>年龄</span><p><input id="age" readonly="readonly" style="border:none;"></p></li>
+	  				<li><span>QQ/微信</span><p><input id="email" readonly="readonly" style="border:none;"></p></li>
+	  				<li><span>现居地</span><p><input id="place" readonly="readonly" style="border:none;"></p></li>
+	  				<li><span>自我介绍</span><p><input id="introduce" readonly="readonly" style="border:none;"></p></li>
+	  			</ul>
+	  		</div>
+<!--	  		<div class="per_first_2">-->
+<!--	  			<h3 id="per_first">基本资料</h3>-->
+<!--	  			<ul>-->
+<!--	  				<li><span>姓名</span><input type="text" placeholder="我们需要真实姓名"/></li>-->
+<!--	  				<li><span>性别</span>-->
+<!--		  					<input name="man" type="radio" value="man" />&nbsp;男-->
+<!--							<input name="women" type="radio" value="women" />&nbsp;女-->
+<!--	  				</li>-->
+<!--	  				<li><span>年龄</span><input type="number"/></li>-->
+<!--	  				<li><span>手机号</span><input type="text" placeholder="请输入常用手机号"/></li>-->
+<!--	  				<li><span>QQ/微信</span><input type="text" placeholder="请输入你常用的联系方式"/></li>-->
+<!--	  				<li><span>现居地</span>-->
+<!--  							<select>-->
+<!--								  	<option value="type">合肥</option>-->
+<!--								  	<option value="type">南京</option>-->
+<!--								  	<option value="type">芜湖</option>-->
+<!--								  	<option value="type">巢湖学院</option>-->
+<!--							</select>-->
+<!--	  				</li>-->
+<!--	  				<li><span>自我介绍</span><textarea placeholder="最好在十五字以内，简洁明了"></textarea></li>-->
+<!--	  			</ul>-->
+<!--	  			<button id="per_fir_btn" class="btn btn-default">提交</button>-->
+<!--	  		</div>-->
+	  		<div class="per_second">
+	  			<h3 id="per_second">用户头像</h3>
+	  			<div class="per_img_left">
+	  				<span>正在使用</span>
+	  				<div class="per_img_now">
+	  					<img src="img/ld_1.jpg" />
+	  				</div>
+	  			</div>
+	  			<div class="per_img_right">
+	  				<span>更换</span>
+	  				<div class="per_img_change">
+	  					<img src="img/ld_1.jpg" />
+	  				</div>
+	  				<form action="input_from" enctype="multipart/form-data" name="input_from"><input 
+	  					type="file" name="input_file" id="input_file" style="display: none;" onchange="document.input_from.input_text.value=this.value"/><input 
+	  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from.input_file.click()"/><input 
+	  					type="text" name="input_text" id="input_text"/><br>
+				　　　　	<input type="submit" id="per_sub" class="btn btn-default" value="提交"/>
+						</form>
+	  			</div>
+  			</div>
+<!--  			<div class="per_third">-->
+<!--  				<h3 id="per_third">修改密码</h3>-->
+<!--  				<div class="per_pas">-->
+<!--  					<ul>-->
+<!--  						<li><span>原始密码</span><input type="text" placeholder="输入原来的密码"/></li>-->
+<!--  						<li><span>修改密码</span><input type="text" placeholder="想要修改的密码"/></li>-->
+<!--  						<li><span>再次密码</span><input type="text" placeholder="再输入修改的密码"/></li>-->
+<!--  					</ul>-->
+<!--  					<button id="per_pas_btn" class="btn btn-default">确定修改</button>-->
+<!--  				</div>-->
+<!--  			</div>-->
+  			<div class="per_fourth">
+  				<h3 id="per_fourth">以往记录</h3>
+  				<form>
+  					<table>
+	  					<tr>
+	  						<th>时间</th>
+	  						<th>书籍</th>
+	  						<th>买方</th>
+	  						<th>是否成交</th>
+	  					</tr>
+	  					<tr>
+	  						<td>2019.12.24</td>
+	  						<td>高数上册</td>
+	  						<td>裴婉婷</td>
+	  						<td>是</td>
+	  					</tr>
+	  					<tr>
+	  						<td>2019.12.24</td>
+	  						<td>高数上册</td>
+	  						<td>加华丽</td>
+	  						<td>是</td>
+	  					</tr>
+	  					<tr>
+	  						<td>2019.12.24</td>
+	  						<td>高数上册</td>
+	  						<td>张瑞</td>
+	  						<td>是</td>
+	  					</tr>
+  					</table>
+  				</form>
+  			</div>
+  		</div>
+  		
+  	</div>
+  	
+  	<footer class="tail">
+		<div class="bottom">
+			<div class="ziQ">
+				<ul>
+					<li><a>关于我们</a></li>
+					<li><a>服务协议</a></li>
+					<li><a>隐私保护政策</a></li>
+					<li><a>使用指南</a></li>
+					<li><a>联系我们</a></li>
+					<li><a>加入我们</a></li>
+					<li><a>友情链接</a></li>
+					<li><a>私信书海拾贝</a></li>
+				</ul>
+				<p>公司名称：书海拾贝有限责任公司</p>
+				<p> 公司地址：山西财经大学</p>
+				<p> 联系电话：110 </p>
+			</div>
+		</div>
+  	</footer>
+  	
+  	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/person.js" ></script>
+  </body>
+</html>

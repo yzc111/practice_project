@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>二手书交易平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/details.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<!--网页最上面的横条-->
+  	<div id="header">
+  		<div class="container">
+  			<span>专业二手书商城</span>
+  			<div class="register">
+  				<a href="personal.html">个人中心</a>
+  				<a href="login.html">登录&nbsp;<span class="glyphicon glyphicon-user"></span></a>
+  				<a href="login.html">注销&nbsp;<span class="glyphicon glyphicon-off"></span></a>
+  			</div>
+  		</div>
+  	</div>
+  	<!--中间的logn 搜索框 以及图标位置 部分-->
+  	<div id="logn" class="container">
+  		<div class="logo">
+  			<h1>For-Knowledge</h1>
+  			<div class="input-group search">
+  				<input type="text" class="" placeholder="请输入搜索的内容"><button class="btn"><span class="glyphicon glyphicon-search"></span></button>
+  			</div>
+  			<div class="search_bottom">
+				<span>热搜：<a href="#" class="">高等数学</a>|<a href="#" class="">概率论与数理统计</a>|<a href="#" class="">计算机二级</a>|<a href="#" class="">初级会计</a></span>
+			</div>
+  		</div>
+  		<div class="logo_logo">
+  			<img src="img/logo.png" />
+  		</div>
+  	</div>
+  	
+  		<!--导航栏部分-->
+  	<nav id="nav_main" >
+  		<div class="container">
+	  		<ul class="hp_ul">
+	  			<li><a href="home_page.html"><!--<span class="glyphicon glyphicon-home"></span>&nbsp;-->首页</a></li><li class="active">
+	  				<a href="stack.html"><span class="glyphicon glyphicon-th-list"></span>&nbsp;书库</a></li><li >
+	  				<a href="wish_list.html"><!--<span class="glyphicon glyphicon-list-alt"></span>&nbsp;-->心愿单</a></li><li >
+	  				<a href="sell_book.html"><!--<span class="glyphicon glyphicon-log-in"></span>&nbsp;-->卖书</a></li><li >
+	  				<a href="bookcase.html"><!--<span class="glyphicon glyphicon-tasks"></span>&nbsp;-->书架</a></li><li >
+	  				<a href="client.html"><!--<span class="glyphicon glyphicon-phone"></span>&nbsp;-->客户端</a></li><li >
+	  				<a href="community.html"><!--<span class="glyphicon glyphicon-comment"></span>&nbsp;-->社区</a></li>
+	  		</ul>
+  		</div>
+  	</nav>
+  	
+  	<div id="details" class="container">
+  		<h3>物品详情</h3>
+  		<div class="details_left">
+  			<div class="details_book">
+					<div class="book_ul_1">
+						<img src="img/details_1.jpg">
+						<img src="img/details_2.jpg">
+						<img src="img/details_3.jpg">
+						<img src="img/details_4.jpg">
+						<img src="img/details_5.jpg">
+					</div>
+					<div class="left_btn">
+		  				<a href=""><span class="glyphicon glyphicon-menu-left"></span></a>
+		  			</div>
+		  			<div class="right_btn">
+		  				<a href=""><span class="glyphicon glyphicon-menu-right"></span></a>
+		  			</div>
+					<ul class="book_ul_2">
+						<li><img src="img/details_6.jpg"></li>
+						<li><img src="img/details_7.jpg"></li>
+						<li><img src="img/details_8.jpg"></li>
+						<li><img src="img/details_9.jpg"></li>
+						<li><img src="img/details_10.jpg"></li>
+					</ul>
+				</div>
+  		</div>
+  		<div class="details_right">
+  			<div id="details_href">返回&nbsp;<a href="stack.html">书架&nbsp;<span class="glyphicon glyphicon-log-out"></span></a></div>
+  			<div class="details_book">
+  				<div class="details_info">
+					<form id="joinBook" action="" method="get">
+						<ul>
+							<li>书籍名称：<input id="nam" name="nam" value="计算机网络" readonly="readonly" style="border:none;"
+							></li>
+							<li>书籍简介：<input class="span_info" id="intro" name="intro" readonly="readonly" style="border:none;width: 300px;height: 20px"value="本书的特点是概念准确、论述严谨、内容新颖、图文并茂，突出基本原理和基本概念的阐述，同时力图反映计算机网络的一些最新发展。">
+							</li>
+							<li>书籍价格：<input id="price" name="price" value="26.5 元" readonly="readonly" style="border:none;"></li>
+							<li>书籍语言：<input id="lag" name="lag" value="中文" readonly="readonly" style="border:none;"></li>
+							<li>书籍种类：<input id="typ" name="typ" value="教材" readonly="readonly" style="border:none;"></li>
+							<li>书籍成色：<input id="cond" name="cond" value="七成新" readonly="readonly" style="border:none;"></li>
+							<li>发布时间：<input id="ctime" name="ctime" value="2019.12.15" readonly="readonly" style="border:none;"></li>
+							<li>书籍库存：<input id="stock" name="stock" value="目前还有八本" readonly="readonly" style="border:none;"></li>
+							<input id="name" name="name" style="border:none;" hidden>
+							<li>卖家介绍：<input id="seller" name="seller" value="山西财经大学信息学院学生" readonly="readonly" style="border:none;"
+
+							></li>
+						</ul>
+					</form>
+  				</div>
+  				<button id="details_collect" type="button" class="btn">加入书架</button>
+  				<button id="details_link" class="btn">
+                                                          <a href="client.html">立即购买</a>
+                                                           </button>
+  			</div>
+  		</div>
+  	</div>
+  	
+  	<footer class="tail">
+  		
+  	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/index.js"></script>-->
+    <script src="js/details.js"></script>
+  </body>
+</html>

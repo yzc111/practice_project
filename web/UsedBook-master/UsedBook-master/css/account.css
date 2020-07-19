@@ -1,0 +1,364 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+a{
+	color: #000000;
+}
+img:hover{
+	transform: scale(1.02);
+}
+.register{
+	display: inline-block;
+	float: right;
+}
+.register a{
+	margin-left: 10px;
+	margin-right: 0;
+}
+/*中间图标和搜索框*/
+.logo {
+    margin: 40px auto;
+    width: 300px;
+}
+.logo_logo {
+    position: absolute;
+    width: 284px;
+    height: 91px;
+    margin-top: -135px;
+}
+.logo_logo img:hover{
+	transform: scale(1);
+}
+.logo h1{
+	margin-left: 16px;
+}
+.search input[type="text"]{
+width: 258px;
+    height: 37px;
+    border: 3px solid rgba(182,29,29,1.0);
+    padding-left: 5px;
+    float: left;
+}
+.search>.btn{
+	font-size: 22px;
+	width: 40px;
+	height: 35px;
+	padding: 0;
+	box-sizing: content-box;
+	background-color: rgba(182,29,29,1.0);
+	color: white;
+	border-radius: inherit;
+	float: left;
+}
+.search_bottom{
+	font-size: 5px;
+}
+.search_bottom a:hover{
+	color: red;
+}
+.icon_logo{
+	position: relative;
+	float: right;
+	width: 200px;
+	height: 80px;
+}
+.icon_logo figure{
+	display: inline-block;
+	font-size: 12px;
+	color: #999999;
+	margin: 5px;
+	text-align: center;
+	float: right;
+}
+.icon_logo figure:first-child{
+	margin-right: 0;
+}
+.container {
+    min-width: 1170px;
+}
+#header {
+    background-color: rgba(123,123,123,0.4);
+    min-width: 1170px;
+}
+/*导航栏部分*/
+#nav_main {
+    border-bottom: 2px solid rgba(182,29,29,1.0);
+    margin-bottom: 15px;
+    min-width: 1170px;
+    background-color: #F8F8F8;
+}
+.hp_ul li {
+    display: inline-block;
+    width: 125px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.hp_ul .glyphicon{
+	top: 2px;
+}
+.hp_ul li a:hover{
+	color: rgba(182,29,29,1.0);
+}
+.hp_ul {
+    margin-bottom: 0px;
+}
+.hp_ul .active {
+    background-color: rgba(182,29,29,1.0);
+}
+.hp_ul .active a{
+	color: white;
+}
+.hp_ul .active a:hover{
+	color: white;
+}
+
+/*信息核对表单*/
+.list-info-item{
+	border: 1px solid #CCCCCC;
+	margin-top: 12px;
+	margin-bottom: 20px;
+}
+.list-info-item .title{
+	background-color: #F4F4F4;
+	height: 31px;
+	line-height: 31px;
+	text-indent: 12px;
+	font-weight: normal;
+	font-size: 16px;
+	border-bottom:  1px solid #CCCCCC;
+}
+.content{
+	padding: 15px 30px;
+}
+.content label{
+	display: block;
+	margin: 10px 0;
+	color: red;
+	height: 24px;
+}
+.content span{
+	margin-left: 8px;
+	margin-right: 10px;
+	color: #000;
+	display: inline-block;
+	/*width: 60px;*/
+	text-align: justify;
+
+}
+.content em{
+	color: #000;
+}
+.content select{
+	border: 1px solid #BFBFBF;
+	padding-left: 10px;
+}
+.content select option{
+	padding-left: 10px;
+}
+.content  input[type="text"]{
+	height: 22px;
+	font-size: 12px;
+	width: 390px;
+	border: 1px solid #BFBFBF;
+	text-indent: 10px;
+}
+
+.content .consignee input,
+.content .phone-num input{
+	width: 120px;
+}
+.content .btn-confirm{
+	width: 112px;
+	height: 26px;
+	border: 1px solid #3784ED;
+	background-color: #4694FE;
+	margin-top: 12px;
+	color: #FFF;
+	cursor: pointer;
+}
+/*支付方式*/
+
+.list-info-item .pay label,
+.list-info-item .bill label{
+	color: #000;
+}
+.list-info-item .pay input{
+	margin-right: 10px;
+}
+.list-info-item .pay img{
+	width: 26px;
+	height: 20px;
+	vertical-align:middle;
+	margin-right: 7px;
+	
+}
+.list-info-item .pay em{
+	margin-right: 19px;
+	font-style: normal;
+}
+/*发票信息*/
+.list-info-item .bill input[type="checkbox"]{
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.list-info-item .bill em{
+	color: red;
+	font-style: normal;
+}
+.list-info-item .bill input[type="text"]{
+	width: 140px;
+}
+.list-info-item .bill input[type="button"]{
+	height: 22px;
+	width: 64px;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.list-info-item .bill input[name="save"]{
+	color: #FFF;
+	text-align: center;
+	background-color: #4694FE;
+	border: 1px solid #3784ED;
+}
+.list-info-item .bill input[name="cancel"]{
+	text-align: center;
+	background-color: #F4F4F4;
+	border: 1px solid #CCCCCC;
+}
+
+/*送货清单*/
+.title a{
+	display: block;
+	float: right;
+	color: #3377FF;
+	font-size: 12px;
+	line-height: 31px;
+	padding-right: 33px;
+}
+.product-title{
+	height: 34px;
+	border-bottom: 1px solid #E6E6E6;
+	padding-left: 30px;
+}
+/*.list-info-item .list-content{
+	min-height: 300px;
+}*/
+.list-info-item .list-content li{
+	float: left;
+}
+.content-title{
+	height: 34px;
+	border-bottom: 1px solid #CCC;
+	line-height: 34px;
+	width: 132px;
+}
+.content-name{
+	width: 470px;
+	text-indent: 30px;
+}
+
+/*价格加粗*/
+.contentInfo-box .price{
+	color: #DE0000;
+	font-family: "Verdana";
+	font-weight: bold;
+}
+.contentInfo-box {
+	position: relative;
+	padding: 9px 0;
+	min-height: 100px;
+	border-bottom: 1px solid #CCC;
+}
+.contentInfo-box img{
+	margin: 9px 30px;
+}
+.contentInfo-box a{
+	line-height: 35px;
+}
+.contentInfo-box p{
+	color: #666666;
+	line-height: 35px;
+}
+.bottom{
+	margin-top: 23px;
+}
+.color-b{
+	color: #000;
+}
+
+
+.warning-info{
+	overflow: hidden;
+}
+.warning-tips{
+	padding: 12px 30px;
+	overflow: hidden;
+}
+.tips{
+	color: #3377FF;
+}
+.tips:hover{
+	text-decoration: underline;
+}
+.warning{
+	color: red;
+	margin-top: 30px;
+	text-indent: 25px;
+	background: url(../images/icon/warning.jpg) no-repeat left center;
+}
+.warning-info img{
+	margin-top: 24px;
+	margin-right: 10px;
+	float: left;
+}
+.warning-info .des{
+	padding-top: 24px;
+}
+.warning-info .des a,
+.warning-info .des p{
+	display: block;
+	color: #666666;
+	line-height: 16px;
+	padding-bottom: 5px;
+}
+/*缺货原因样式*/
+.reason{
+	color: #D70000;
+	font-weight: bold;
+}
+
+/*提交订单*/
+.confirm-submit{
+	overflow: hidden;
+	height: 140px;
+}
+.subinfo{
+	margin-top: 40px;
+	text-align: right;
+}
+.total span{
+	font-size: 22px;
+	margin-left: 8px;
+	font-family: "Verdana";
+	color: #E50007;
+}
+.subinfo input[type="button"]{
+	height: 32px;
+	width: 165px;
+	text-indent: 50px;
+	color: #FFF;
+	background-color: #E50007;
+	margin-top: 15px;
+	font-size: 16px;
+	cursor: pointer;
+}
